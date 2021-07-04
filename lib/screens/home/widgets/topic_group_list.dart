@@ -15,7 +15,9 @@ class _TopicGroupListState extends State<TopicGroupList> {
         title: "Вопросы Арона",
         description: "Вопросы чтобы лучше узнать друг друга",
         topics: [
-          Topic(title: "Классическая процедура Арона"),
+          Topic(
+              title: "Классическая процедура Арона",
+              description: "36 вопросов"),
         ],
         tags: [
           Tag(title: "Личное"),
@@ -25,8 +27,12 @@ class _TopicGroupListState extends State<TopicGroupList> {
         title: "На злобу дня",
         description: "Интересные кейсы из повседневности",
         topics: [
-          Topic(title: "Геи в Берлина"),
-          Topic(title: "Проблема Вкусвилла"),
+          Topic(
+              title: "Геи в Берлина",
+              description: "Курьёзный случай со свадьбой"),
+          Topic(
+              title: "Проблема Вкусвилла",
+              description: "Противоречивая реклама"),
         ],
         tags: [
           Tag(title: "Политика"),
