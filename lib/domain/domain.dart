@@ -20,9 +20,10 @@ class TopicGroup {
   final int id;
   final String title;
   final String description;
-  final List<Topic> topis;
+  final List<Topic> topics;
+  final List<Tag> tags;
 
-  TopicGroup({this.id, this.title, this.description, this.topis});
+  TopicGroup({this.id, this.title, this.description, this.topics, this.tags});
 }
 
 class Tag {
