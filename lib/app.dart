@@ -1,6 +1,7 @@
 import 'package:date_topics/screens/home/home.dart';
 import 'package:date_topics/screens/topic/topic.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class App extends StatelessWidget {
   @override
@@ -12,6 +13,9 @@ class App extends StatelessWidget {
         "/": (context) => HomeScreen(),
         "/topic": (context) => TopicScreen(),
       },
+      theme: ThemeData(
+        textTheme: GoogleFonts.comfortaaTextTheme(Theme.of(context).textTheme),
+      ),
     );
   }
 }

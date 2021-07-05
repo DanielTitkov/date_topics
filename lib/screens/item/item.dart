@@ -1,29 +1,29 @@
 import 'package:date_topics/domain/domain.dart';
-import 'package:date_topics/screens/topic/widgets/topic_list.dart';
+import 'package:date_topics/screens/item/widgets/item_card.dart';
+import 'package:date_topics/screens/item/widgets/item_list.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:flutter/material.dart';
 
-class TopicScreen extends StatelessWidget {
-  final TopicGroup topicGroup;
+class ItemScreen extends StatelessWidget {
+  final Topic topic;
 
-  TopicScreen({this.topicGroup});
+  ItemScreen({this.topic});
 
   @override
   Widget build(BuildContext context) {
+    print(topic);
     return Scaffold(
       backgroundColor: Colors.pink[100],
       appBar: AppBar(
           backgroundColor: Colors.pink[300],
-          title: Text("${topicGroup.title}"),
+          title: Text("${topic.title}"),
           centerTitle: true,
           elevation: 0,
           flexibleSpace: Container(decoration: gradientAppBarDecoration)),
       body: SafeArea(
         child: Container(
           decoration: gradientBackgroundDecoration,
-          child: TopicList(
-            topicGroup: topicGroup,
-          ),
+          child: ItemList(topic: topic),
         ),
       ),
     );

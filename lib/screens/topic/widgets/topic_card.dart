@@ -1,4 +1,5 @@
 import 'package:date_topics/domain/domain.dart';
+import 'package:date_topics/screens/item/item.dart';
 import 'package:flutter/material.dart';
 
 class TopicCard extends StatelessWidget {
@@ -14,15 +15,24 @@ class TopicCard extends StatelessWidget {
         elevation: 0,
         margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
         child: InkWell(
-          // onTap: () async {
-          //   Navigator.pushNamed(context, "/topic");
-          // },
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ItemScreen(
+                  topic: topic,
+                ),
+              ),
+            );
+          },
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListTile(
                 title: Text(topic.title),
-                subtitle: Text("Доступно пунктов: ${topic.items?.length ?? 0}"),
+                subtitle: topic.itemsCount() > 1
+                    ? Text("Доступно пунктов: ${topic.itemsCount()}")
+                    : null,
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
