@@ -9,7 +9,7 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 0),
+      padding: EdgeInsets.only(top: 12),
       child: Card(
         elevation: 0,
         margin: EdgeInsets.fromLTRB(20, 6, 20, 6),

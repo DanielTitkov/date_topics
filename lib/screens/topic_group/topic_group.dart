@@ -18,11 +18,9 @@ class TopicGroupScreen extends StatelessWidget {
           centerTitle: true,
           elevation: 0,
           flexibleSpace: Container(decoration: gradientAppBarDecoration)),
-      body: SafeArea(
-        child: Container(
-          decoration: gradientBackgroundDecoration,
-          child: TopicGroupList(topicGroups: topicGroups),
-        ),
+      body: Container(
+        decoration: gradientBackgroundDecoration,
+        child: TopicGroupList(topicGroups: topicGroups),
       ),
     );
   }

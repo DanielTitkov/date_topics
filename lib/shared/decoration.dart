@@ -19,8 +19,9 @@ final gradientAppBarDecoration = BoxDecoration(
     begin: Alignment.centerLeft,
     end: Alignment.centerRight,
     colors: <Color>[
+      Colors.indigo[600],
       Colors.deepPurple[500],
-      Colors.deepPurple[400],
+      Colors.pink[800],
     ],
   ),
 );

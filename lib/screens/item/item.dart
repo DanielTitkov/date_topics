@@ -20,11 +20,9 @@ class ItemScreen extends StatelessWidget {
           centerTitle: true,
           elevation: 0,
           flexibleSpace: Container(decoration: gradientAppBarDecoration)),
-      body: SafeArea(
-        child: Container(
-          decoration: gradientBackgroundDecoration,
-          child: ItemList(topic: topic),
-        ),
+      body: Container(
+        decoration: gradientBackgroundDecoration,
+        child: ItemList(topic: topic),
       ),
     );
   }
