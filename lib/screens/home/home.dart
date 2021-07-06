@@ -59,9 +59,20 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Container(
         decoration: gradientBackgroundDecoration,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 80, 20, 20),
+              child: Center(
+                child: Text(
+                  "Случайный вопрос",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
             ItemCard(item: topicGroups[0].topics[0].items[0]),
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 40),
@@ -74,14 +85,22 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        elevation: 0,
-        color: Colors.purple[100],
-        shape: const CircularNotchedRectangle(),
-        child: Container(height: 50.0),
+      bottomNavigationBar: Container(
+        decoration: gradientAppBarDecoration,
+        child: BottomAppBar(
+          elevation: 0,
+          color: Colors.transparent,
+          shape: const CircularNotchedRectangle(),
+          child: Container(height: 50.0),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        focusElevation: 0,
+        hoverElevation: 0,
+        highlightElevation: 0,
+        foregroundColor: Colors.deepPurpleAccent,
         onPressed: () => setState(() {}),
         child: const Icon(Icons.refresh),
       ),
