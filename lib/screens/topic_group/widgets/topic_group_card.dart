@@ -10,7 +10,7 @@ class TopicGroupCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 12),
+      padding: EdgeInsets.only(bottom: 12),
       child: Card(
         elevation: 0,
         margin: EdgeInsets.fromLTRB(20, 6, 20, 0),

@@ -10,7 +10,7 @@ class TopicCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 12),
+      padding: EdgeInsets.only(bottom: 12),
       child: Card(
         elevation: 0,
         margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
@@ -34,13 +34,15 @@ class TopicCard extends StatelessWidget {
                     ? Text("Доступно пунктов: ${topic.itemsCount()}")
                     : null,
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  topic.description,
-                  style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                ),
-              ),
+              topic.description != null
+                  ? Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        topic.description,
+                        style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                      ),
+                    )
+                  : Container(),
               topic.tags != null
                   ? ButtonBar(
                       alignment: MainAxisAlignment.start,
