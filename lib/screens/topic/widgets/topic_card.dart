@@ -33,6 +33,10 @@ class TopicCard extends StatelessWidget {
                 subtitle: topic.itemsCount() > 1
                     ? Text("Доступно пунктов: ${topic.itemsCount()}")
                     : null,
+                trailing: Wrap(children: [
+                  if (topic.itemsCount() > 1) Icon(Icons.format_list_numbered),
+                  // if (topic.allowsRandomChoice()) Icon(Icons.face),
+                ]),
               ),
               topic.description != null
                   ? Padding(

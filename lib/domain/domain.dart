@@ -1,5 +1,5 @@
 class Item {
-  final int id;
+  final String id;
   final String title; // optional
   final String body;
   final int orderIndex; // this may be optional
@@ -8,7 +8,7 @@ class Item {
 }
 
 class Topic {
-  final int id;
+  final String id;
   final String title;
   final String description;
   final List<Item> items;
@@ -29,7 +29,7 @@ class Topic {
 }
 
 class TopicGroup {
-  final int id;
+  final String id;
   final String title;
   final String description;
   final List<Topic> topics;
@@ -49,7 +49,7 @@ class TopicGroup {
 }
 
 class Tag {
-  final int id;
+  final String id;
   final String title;
   final String description;
 

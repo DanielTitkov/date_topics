@@ -17,9 +17,9 @@ class TopicScreen extends StatelessWidget {
           title: Text("${topicGroup.title}"),
           centerTitle: true,
           elevation: 0,
-          flexibleSpace: Container(decoration: gradientAppBarDecoration)),
+          flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
-        decoration: gradientBackgroundDecoration,
+        decoration: screenBackgroundDecoration,
         child: TopicList(
           topicGroup: topicGroup,
         ),

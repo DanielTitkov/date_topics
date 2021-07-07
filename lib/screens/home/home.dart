@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.pink[300],
         centerTitle: true,
         elevation: 0,
-        flexibleSpace: Container(decoration: gradientAppBarDecoration),
+        flexibleSpace: Container(decoration: appBarDecoration),
         actions: [
           TextButton.icon(
             icon: Icon(
@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Container(
-        decoration: gradientBackgroundDecoration,
+        decoration: screenBackgroundDecoration,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -93,11 +93,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     SizedBox(height: 35),
-                    Text(
-                      "${topicGroups[topicGroupIdx].title} > ${topicGroups[topicGroupIdx].topics[topicIdx].title}",
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.blueGrey[600],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 27),
+                      child: Text(
+                        "${topicGroups[topicGroupIdx].title}:\n ${topicGroups[topicGroupIdx].topics[topicIdx].title}",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.blueGrey[600],
+                        ),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                   ],
@@ -118,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       bottomNavigationBar: Container(
-        decoration: gradientAppBarDecoration,
+        decoration: appBarDecoration,
         child: BottomAppBar(
           elevation: 0,
           color: Colors.transparent,

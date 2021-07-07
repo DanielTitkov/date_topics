@@ -19,9 +19,9 @@ class ItemScreen extends StatelessWidget {
           title: Text("${topic.title}"),
           centerTitle: true,
           elevation: 0,
-          flexibleSpace: Container(decoration: gradientAppBarDecoration)),
+          flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
-        decoration: gradientBackgroundDecoration,
+        decoration: screenBackgroundDecoration,
         child: ItemList(topic: topic),
       ),
     );

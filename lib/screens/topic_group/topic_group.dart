@@ -17,9 +17,9 @@ class TopicGroupScreen extends StatelessWidget {
           title: Text("Каталог"),
           centerTitle: true,
           elevation: 0,
-          flexibleSpace: Container(decoration: gradientAppBarDecoration)),
+          flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
-        decoration: gradientBackgroundDecoration,
+        decoration: screenBackgroundDecoration,
         child: TopicGroupList(topicGroups: topicGroups),
       ),
     );
