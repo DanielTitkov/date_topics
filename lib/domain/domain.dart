@@ -19,6 +19,13 @@ class Topic {
   int itemsCount() {
     return items?.length ?? 0;
   }
+
+  bool allowsRandomChoice() {
+    if (this.itemsCount() == 1) {
+      return true;
+    }
+    return false;
+  }
 }
 
 class TopicGroup {
@@ -29,6 +36,16 @@ class TopicGroup {
   final List<Tag> tags;
 
   TopicGroup({this.id, this.title, this.description, this.topics, this.tags});
+
+  bool allowsRandomChoice() {
+    for (var topic in topics) {
+      if (topic.allowsRandomChoice()) {
+        return true;
+      }
+    }
+
+    return false;
+  }
 }
 
 class Tag {

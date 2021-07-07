@@ -10,7 +10,7 @@ class ItemList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (topic != null && topic.items.length > 0) {
+    if (topic != null && topic.items != null && topic.items.length > 0) {
       return ListView.builder(
         itemCount: topic.items.length,
         itemBuilder: (context, i) {
@@ -21,7 +21,7 @@ class ItemList extends StatelessWidget {
       return Container(
         child: Center(
           child: Text(
-            "Тема пуста",
+            "Пока тут пусто",
             style: TextStyle(fontSize: 30),
           ),
         ),

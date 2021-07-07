@@ -27,8 +27,13 @@ final List<TopicGroup> topicGroupsData = [
       Topic(
         title: "Геи в Берлине",
         description: "Курьёзный случай со свадьбой",
+        items: [Item(body: "Вопрос про свадьбу будет тут")],
       ),
-      Topic(title: "Проблема Вкусвилла", description: "Противоречивая реклама"),
+      Topic(
+        title: "Проблема Вкусвилла",
+        description: "Противоречивая реклама",
+        items: [Item(body: "Вопрос про Вкусвилл будет тут")],
+      ),
     ],
     tags: [
       Tag(title: "Политика"),
@@ -42,14 +47,17 @@ final List<TopicGroup> topicGroupsData = [
       Topic(
         title: "Девочки и мандарины",
         description: "Кое-что о физике",
+        items: [Item(body: "Вопрос про мандарины будет тут")],
       ),
       Topic(
         title: "Реклама в ОАЭ",
         description: "Культурное соотвествие",
+        items: [Item(body: "Вопрос про рекламу в ОАЭ будет тут")],
       ),
       Topic(
         title: "Кролики в Австралии",
         description: "Базовая биология",
+        items: [Item(body: "Вопрос про кроликов будет тут")],
       ),
     ],
     tags: [

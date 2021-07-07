@@ -3,6 +3,7 @@ import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/item/widgets/item_card.dart';
 import 'package:date_topics/screens/topic_group/topic_group.dart';
 import 'package:date_topics/screens/topic_group/widgets/topic_group_list.dart';
+import 'package:date_topics/services/topic.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,23 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final List<TopicGroup> topicGroups = topicGroupsData;
+    final TopicProcessor processor = TopicProcessor(topicGroups: topicGroups);
+
+    int topicGroupIdx;
+    int topicIdx;
+    // int itemIdx; // not randomized by now
+
+    void _updateRandomItem() {
+      RandomItem item = processor.randomItem();
+      setState(() {
+        topicGroupIdx = item.topicGroupIdx;
+        topicIdx = item.topicIdx;
+        itemIdx = item.itemIdx;
+      });
+    }
+
+    _updateRandomItem();
+
     return Scaffold(
       backgroundColor: Colors.pink[100],
       appBar: AppBar(
@@ -63,17 +81,31 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 80, 20, 20),
+              padding: EdgeInsets.fromLTRB(20, 80, 20, 0),
               child: Center(
-                child: Text(
-                  "Случайный вопрос",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                child: Column(
+                  children: [
+                    Text(
+                      "Случайный вопрос",
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.blueGrey[800],
+                      ),
+                    ),
+                    SizedBox(height: 35),
+                    Text(
+                      "${topicGroups[topicGroupIdx].title} > ${topicGroups[topicGroupIdx].topics[topicIdx].title}",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.blueGrey[600],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
-            ItemCard(item: topicGroups[0].topics[0].items[0]),
+            ItemCard(
+                item: topicGroups[topicGroupIdx].topics[topicIdx].items[0]),
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 40),
               child: Column(
@@ -101,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
         hoverElevation: 0,
         highlightElevation: 0,
         foregroundColor: Colors.deepPurpleAccent,
-        onPressed: () => setState(() {}),
+        onPressed: _updateRandomItem,
         child: const Icon(Icons.refresh),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
