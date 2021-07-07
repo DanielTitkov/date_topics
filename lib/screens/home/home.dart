@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     int topicGroupIdx;
     int topicIdx;
-    // int itemIdx; // not randomized by now
+    int itemIdx; // not randomized by now
 
     void _updateRandomItem() {
       RandomItem item = processor.randomItem();
