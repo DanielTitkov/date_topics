@@ -194,5 +194,84 @@ final List<TopicGroup> topicGroupsData = [
                   id: "mundane_next_week_q1",
                   body: "Что ты планируешь делать на следующей неделе?"),
             ]),
+        Topic(
+            id: "mundane_dates",
+            title: "Что тебе нравится и не нравится в свиданиях?",
+            items: [
+              Item(
+                  id: "mundane_dates_q1",
+                  body: "Что тебе нравится и не нравится в свиданиях?"),
+            ]),
+        Topic(
+            id: "mundane_friends",
+            title: "Чем ты славишься среди своих друзей?",
+            items: [
+              Item(
+                  id: "mundane_friends_q1",
+                  body: "Чем ты славишься среди своих друзей?"),
+            ]),
+        Topic(
+            id: "mundane_stereotype",
+            title:
+                "Какой стереотип о мужчинах / женщинах ты ненавидишь больше всего?",
+            items: [
+              Item(
+                  id: "mundane_stereotype_q1",
+                  body:
+                      "Какой стереотип о мужчинах / женщинах ты ненавидишь больше всего?"),
+            ]),
+        Topic(
+            id: "mundane_worry",
+            title: "Что заставляет тебя нервничать?",
+            items: [
+              Item(
+                  id: "mundane_worry_q1",
+                  body: "Что заставляет тебя нервничать?"),
+            ]),
+        Topic(
+            id: "mundane_disgust",
+            title: "Что может мгновенно вызвать в тебе отторжение к человеку?",
+            items: [
+              Item(
+                  id: "mundane_disgust_q1",
+                  body:
+                      "Что может мгновенно вызвать в тебе отторжение к человеку?"),
+            ]),
+        Topic(
+            id: "mundane_misunderstanding",
+            title: "С каким заблуждением о себе ты сталкиваешься чаще всего?",
+            items: [
+              Item(
+                  id: "mundane_misunderstanding_q1",
+                  body:
+                      "С каким заблуждением о себе ты сталкиваешься чаще всего?"),
+            ]),
+        Topic(
+            id: "mundane_memories",
+            title: "Какое у тебя самое яркое воспоминание из детства?",
+            items: [
+              Item(
+                  id: "mundane_memories_q1",
+                  body: "Какое у тебя самое яркое воспоминание из детства?"),
+            ]),
+        Topic(id: "mundane_regime", title: "Ты жаворонок или сова?", items: [
+          Item(id: "mundane_regime_q1", body: "Ты жаворонок или сова?"),
+        ]),
+        Topic(
+            id: "mundane_food",
+            title: "Что ты любишь на ужин/завтрак?",
+            items: [
+              Item(
+                  id: "mundane_food_q1",
+                  body: "Что ты любишь на ужин/завтрак?"),
+            ]),
+        Topic(
+            id: "mundane_pets",
+            title: "Ты любишь больше кошек или собак?",
+            items: [
+              Item(
+                  id: "mundane_pets_q1",
+                  body: "Ты любишь больше кошек или собак?"),
+            ]),
       ]),
 ];

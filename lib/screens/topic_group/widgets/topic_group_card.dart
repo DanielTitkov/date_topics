@@ -41,12 +41,13 @@ class TopicGroupCard extends StatelessWidget {
               ),
               ButtonBar(
                 alignment: MainAxisAlignment.start,
-                children: topicGroup.tags.map((e) {
-                  return TextButton(
-                    onPressed: () {},
-                    child: Text(e.title),
-                  );
-                }).toList(),
+                children: topicGroup?.tags?.map((e) {
+                      return TextButton(
+                        onPressed: () {},
+                        child: Text(e.title),
+                      );
+                    })?.toList() ??
+                    [],
               ),
             ],
           ),
