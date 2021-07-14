@@ -13,8 +13,15 @@ class Topic {
   final String description;
   final List<Item> items;
   final List<Tag> tags;
+  final bool allowPlayer;
 
-  Topic({this.id, this.title, this.description, this.items, this.tags});
+  Topic(
+      {this.id,
+      this.title,
+      this.description,
+      this.items,
+      this.tags,
+      this.allowPlayer = true});
 
   int itemsCount() {
     return items?.length ?? 0;

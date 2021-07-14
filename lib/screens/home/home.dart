@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.cyan[200],
         elevation: 0,
         focusElevation: 0,
         hoverElevation: 0,
