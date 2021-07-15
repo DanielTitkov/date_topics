@@ -14,24 +14,24 @@ class Topic {
   final List<Item> items;
   final List<Tag> tags;
   final bool allowPlayer;
+  final bool allowRandom;
 
-  Topic(
-      {this.id,
-      this.title,
-      this.description,
-      this.items,
-      this.tags,
-      this.allowPlayer = true});
+  Topic({
+    this.id,
+    this.title,
+    this.description,
+    this.items,
+    this.tags,
+    this.allowPlayer = true,
+    this.allowRandom = true,
+  });
 
   int itemsCount() {
     return items?.length ?? 0;
   }
 
   bool allowsRandomChoice() {
-    if (this.itemsCount() == 1) {
-      return true;
-    }
-    return false;
+    return allowRandom;
   }
 }
 
