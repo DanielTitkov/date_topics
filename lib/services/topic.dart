@@ -28,10 +28,17 @@ class TopicProcessor {
     int topicIdx =
         _random.nextInt(topicGroupsToRandomize[topicGroupIdx].length);
 
+    int itemIdx = _random
+        .nextInt(topicGroups[topicGroupIdx].topics[topicIdx].items.length);
+
+    print(topicGroupIdx);
+    print(topicIdx);
+    print(itemIdx);
+
     return RandomItem(
       topicGroupIdx: topicGroupIdx,
       topicIdx: topicIdx,
-      itemIdx: 0, // for now only topics with 1 item allowed to random choice
+      itemIdx: itemIdx,
     );
   }
 }

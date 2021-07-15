@@ -109,7 +109,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ItemCard(
-                item: topicGroups[topicGroupIdx].topics[topicIdx].items[0]),
+                item:
+                    topicGroups[topicGroupIdx].topics[topicIdx].items[itemIdx]),
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 40),
               child: Column(
