@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 class ItemCard extends StatelessWidget {
   final Item item;
+  final Color color;
 
-  ItemCard({this.item});
+  ItemCard({this.item, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +13,7 @@ class ItemCard extends StatelessWidget {
       padding: EdgeInsets.only(top: 12),
       child: Card(
         elevation: 0,
+        color: color,
         margin: EdgeInsets.fromLTRB(20, 6, 20, 6),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 30, 20, 32),
@@ -21,7 +23,7 @@ class ItemCard extends StatelessWidget {
               if (item.title != null)
                 Text(
                   item.title,
-                  style: TextStyle(color: Colors.grey[600]),
+                  style: TextStyle(color: Colors.grey[800]),
                 ),
               if (item.title != null) SizedBox(height: 6),
               Text(

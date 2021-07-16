@@ -31,10 +31,6 @@ class TopicProcessor {
     int itemIdx = _random
         .nextInt(topicGroups[topicGroupIdx].topics[topicIdx].items.length);
 
-    print(topicGroupIdx);
-    print(topicIdx);
-    print(itemIdx);
-
     return RandomItem(
       topicGroupIdx: topicGroupIdx,
       topicIdx: topicIdx,

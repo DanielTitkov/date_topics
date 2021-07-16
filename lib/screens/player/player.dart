@@ -1,6 +1,7 @@
 import 'package:date_topics/data/members.dart';
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/item/widgets/item_card.dart';
+import 'package:date_topics/screens/player/widgets/member_caption.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:flutter/material.dart';
 
@@ -60,8 +61,6 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("rebuilt");
-
     return Scaffold(
       backgroundColor: Colors.pink[100],
       appBar: AppBar(
@@ -72,46 +71,60 @@ class _PlayerScreenState extends State<PlayerScreen> {
           flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
         decoration: screenBackgroundDecoration,
-        child: Column(
-          children: [
-            Expanded(
-              child: Column(
-                children: [
-                  Text(
-                    "Участник ${member.id}",
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(20, 80, 20, 0),
+          child: Column(
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    Text(
+                      "Вопрос ${_currentItemIdx + 1}/${widget.topic.itemsCount()}",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.blueGrey[800],
+                      ),
+                    ),
+                    SizedBox(height: 35),
+                    MemberCaption(member: member),
+                    SizedBox(height: 27),
+                    ItemCard(
+                      item: widget.topic.items[_currentItemIdx],
                       color: member.color,
                     ),
-                  ),
-                  Text(
-                    "Вопрос ${_currentItemIdx + 1}/${widget.topic.itemsCount()}",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blueGrey[800],
+                  ],
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  FlatButton(
+                    color: Colors.deepPurpleAccent,
+                    onPressed: _previousItem,
+                    child: Text(
+                      "Предыдущий",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                  ItemCard(item: widget.topic.items[_currentItemIdx]),
+                  FlatButton(
+                    color: Colors.deepPurpleAccent,
+                    onPressed: _nextItem,
+                    child: Text(
+                      "Следующий",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ],
               ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                FlatButton(
-                  color: Colors.deepPurpleAccent,
-                  onPressed: _previousItem,
-                  child: Text("Предыдущий"),
-                ),
-                FlatButton(
-                  color: Colors.deepPurpleAccent,
-                  onPressed: _nextItem,
-                  child: Text("Следующий"),
-                ),
-              ],
-            ),
-          ],
+              SizedBox(height: 10),
+            ],
+          ),
         ),
       ),
     );
