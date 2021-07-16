@@ -1,5 +1,4 @@
 import 'package:date_topics/domain/domain.dart';
-import 'package:date_topics/screens/item/widgets/item_card.dart';
 import 'package:date_topics/screens/item/widgets/item_list.dart';
 import 'package:date_topics/screens/item/widgets/player_setup.dart';
 import 'package:date_topics/shared/decoration.dart';

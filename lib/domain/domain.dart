@@ -1,3 +1,5 @@
+import 'package:flutter/painting.dart';
+
 class Item {
   final String id;
   final String title; // optional
@@ -61,4 +63,11 @@ class Tag {
   final String description;
 
   Tag({this.id, this.title, this.description});
+}
+
+class Member {
+  final int id;
+  final Color color;
+
+  Member({this.id, this.color});
 }

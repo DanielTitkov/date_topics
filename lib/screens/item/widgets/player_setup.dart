@@ -54,6 +54,7 @@ class _PlayerSetupState extends State<PlayerSetup> {
                   MaterialPageRoute(
                     builder: (context) => PlayerScreen(
                       topic: widget.topic,
+                      membersNumber: _currentMembersNumber,
                     ),
                   ),
                 );
