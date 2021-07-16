@@ -12,13 +12,13 @@ class ItemScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void _showPlayerSetupPanel() {
+    void _showPlayerSetupPanel(Topic topic) {
       showModalBottomSheet(
         context: context,
         builder: (context) {
           return Container(
             padding: EdgeInsets.symmetric(horizontal: 60, vertical: 20),
-            child: PlayerSetup(),
+            child: PlayerSetup(topic: topic),
           );
         },
       );
@@ -55,7 +55,7 @@ class ItemScreen extends StatelessWidget {
               hoverElevation: 0,
               highlightElevation: 0,
               foregroundColor: Colors.deepPurpleAccent,
-              onPressed: _showPlayerSetupPanel,
+              onPressed: () => _showPlayerSetupPanel(topic),
               child: const Icon(Icons.play_arrow),
             )
           : null,

@@ -1,6 +1,12 @@
+import 'package:date_topics/domain/domain.dart';
+import 'package:date_topics/screens/player/player.dart';
 import 'package:flutter/material.dart';
 
 class PlayerSetup extends StatefulWidget {
+  final Topic topic;
+
+  PlayerSetup({this.topic});
+
   @override
   _PlayerSetupState createState() => _PlayerSetupState();
 }
@@ -43,7 +49,14 @@ class _PlayerSetupState extends State<PlayerSetup> {
             ),
             onPressed: () async {
               if (_formKey.currentState.validate()) {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PlayerScreen(
+                      topic: widget.topic,
+                    ),
+                  ),
+                );
               }
             },
           ),
