@@ -54,7 +54,12 @@ class TopicCard extends StatelessWidget {
                       children: topic.tags.map((e) {
                         return TextButton(
                           onPressed: () {},
-                          child: Text(e.title),
+                          child: Text(
+                            e.title,
+                            style: TextStyle(
+                              color: Colors.deepPurpleAccent,
+                            ),
+                          ),
                         );
                       }).toList(),
                     )
