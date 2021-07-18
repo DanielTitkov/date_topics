@@ -13,6 +13,7 @@ class Topic {
   final String id;
   final String title;
   final String description;
+  final String image;
   final List<Item> items;
   final List<Tag> tags;
   final bool allowPlayer;
@@ -22,6 +23,7 @@ class Topic {
     this.id,
     this.title,
     this.description,
+    this.image,
     this.items,
     this.tags,
     this.allowPlayer = true,

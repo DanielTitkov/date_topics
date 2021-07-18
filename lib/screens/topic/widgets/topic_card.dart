@@ -9,6 +9,7 @@ class TopicCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(topic.image);
     return Padding(
       padding: EdgeInsets.only(bottom: 12),
       child: Card(
@@ -32,6 +33,11 @@ class TopicCard extends StatelessWidget {
                 title: Text(topic.title),
                 subtitle: topic.itemsCount() > 1
                     ? Text("Доступно пунктов: ${topic.itemsCount()}")
+                    : null,
+                leading: topic.image != null
+                    ? Image(
+                        image: AssetImage("assets/icons/${topic.image}"),
+                      )
                     : null,
                 trailing: Wrap(children: [
                   if (topic.allowPlayer) Icon(Icons.play_arrow),
