@@ -5,6 +5,7 @@ import 'package:date_topics/screens/topic_group/topic_group.dart';
 import 'package:date_topics/screens/topic_group/widgets/topic_group_list.dart';
 import 'package:date_topics/services/topic.dart';
 import 'package:date_topics/shared/decoration.dart';
+import 'package:date_topics/shared/tags_cloud.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,6 +22,18 @@ class _HomeScreenState extends State<HomeScreen> {
     int topicGroupIdx;
     int topicIdx;
     int itemIdx; // not randomized by now
+
+    void _showTagPanel() {
+      showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return Container(
+            padding: EdgeInsets.symmetric(horizontal: 60, vertical: 20),
+            child: TagsCloud(),
+          );
+        },
+      );
+    }
 
     void _updateRandomItem() {
       RandomItem item = processor.randomItem();
@@ -66,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Icons.tag,
               color: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: _showTagPanel,
             label: Text(
               "Теги",
               style: TextStyle(color: Colors.white),
