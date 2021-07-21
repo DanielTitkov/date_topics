@@ -54,22 +54,22 @@ class TopicCard extends StatelessWidget {
                       ),
                     )
                   : Container(),
-              topic.tags != null
-                  ? ButtonBar(
-                      alignment: MainAxisAlignment.start,
-                      children: topic.tags.map((e) {
-                        return TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            e.title,
-                            style: TextStyle(
-                              color: Colors.deepPurpleAccent,
-                            ),
-                          ),
-                        );
-                      }).toList(),
-                    )
-                  : Container(),
+              // topic.tags != null
+              //     ? ButtonBar(
+              //         alignment: MainAxisAlignment.start,
+              //         children: topic.tags.map((e) {
+              //           return TextButton(
+              //             onPressed: () {},
+              //             child: Text(
+              //               e.title,
+              //               style: TextStyle(
+              //                 color: Colors.deepPurpleAccent,
+              //               ),
+              //             ),
+              //           );
+              //         }).toList(),
+              //       )
+              //     : Container(),
             ],
           ),
         ),

@@ -74,17 +74,17 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(color: Colors.white),
             ),
           ),
-          TextButton.icon(
-            icon: Icon(
-              Icons.tag,
-              color: Colors.white,
-            ),
-            onPressed: _showTagPanel,
-            label: Text(
-              "Теги",
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
+          // TextButton.icon(
+          //   icon: Icon(
+          //     Icons.tag,
+          //     color: Colors.white,
+          //   ),
+          //   onPressed: _showTagPanel,
+          //   label: Text(
+          //     "Теги",
+          //     style: TextStyle(color: Colors.white),
+          //   ),
+          // ),
         ],
       ),
       body: Container(

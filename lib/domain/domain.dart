@@ -15,6 +15,7 @@ class Topic {
   final String description;
   final String image;
   final List<Item> items;
+  List<Item> itemsFiltered;
   final List<Tag> tags;
   final bool allowPlayer;
   final bool allowRandom;
