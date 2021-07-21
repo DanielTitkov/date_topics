@@ -49,6 +49,7 @@ class _PlayerSetupState extends State<PlayerSetup> {
             ),
             onPressed: () async {
               if (_formKey.currentState.validate()) {
+                Navigator.pop(context);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
