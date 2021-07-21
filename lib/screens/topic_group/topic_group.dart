@@ -3,11 +3,17 @@ import 'package:date_topics/screens/topic_group/widgets/topic_group_list.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:flutter/material.dart';
 
-class TopicGroupScreen extends StatelessWidget {
+class TopicGroupScreen extends StatefulWidget {
   final List<TopicGroup> topicGroups;
+  List<Tag> filterTags;
 
   TopicGroupScreen({this.topicGroups});
 
+  @override
+  _TopicGroupScreenState createState() => _TopicGroupScreenState();
+}
+
+class _TopicGroupScreenState extends State<TopicGroupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +26,7 @@ class TopicGroupScreen extends StatelessWidget {
           flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
         decoration: screenBackgroundDecoration,
-        child: TopicGroupList(topicGroups: topicGroups),
+        child: TopicGroupList(topicGroups: widget.topicGroups),
       ),
     );
   }
