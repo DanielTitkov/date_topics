@@ -2,6 +2,7 @@ import 'package:date_topics/data/members.dart';
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/item/widgets/item_card.dart';
 import 'package:date_topics/screens/player/widgets/member_caption.dart';
+import 'package:date_topics/shared/button.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:flutter/material.dart';
 
@@ -98,27 +99,13 @@ class _PlayerScreenState extends State<PlayerScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  FlatButton(
-                    color: Colors.deepPurpleAccent,
+                  Button(
+                    text: "Предыдущий",
                     onPressed: _previousItem,
-                    child: Text(
-                      "Предыдущий",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
-                      ),
-                    ),
                   ),
-                  FlatButton(
-                    color: Colors.deepPurpleAccent,
+                  Button(
+                    text: "Следующий",
                     onPressed: _nextItem,
-                    child: Text(
-                      "Следующий",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
-                      ),
-                    ),
                   ),
                 ],
               ),

@@ -4,6 +4,7 @@ import 'package:date_topics/screens/item/widgets/item_card.dart';
 import 'package:date_topics/screens/topic_group/topic_group.dart';
 import 'package:date_topics/screens/topic_group/widgets/topic_group_list.dart';
 import 'package:date_topics/services/topic.dart';
+import 'package:date_topics/shared/action_button.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:date_topics/shared/tags_cloud.dart';
 import 'package:flutter/material.dart';
@@ -144,15 +145,9 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Container(height: 50.0),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.cyan[200],
-        elevation: 0,
-        focusElevation: 0,
-        hoverElevation: 0,
-        highlightElevation: 0,
-        foregroundColor: Colors.deepPurpleAccent,
+      floatingActionButton: ActionButton(
         onPressed: _updateRandomItem,
-        child: const Icon(Icons.refresh),
+        icon: const Icon(Icons.refresh),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

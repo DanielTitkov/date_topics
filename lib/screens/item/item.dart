@@ -1,6 +1,7 @@
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/item/widgets/item_list.dart';
 import 'package:date_topics/screens/item/widgets/player_setup.dart';
+import 'package:date_topics/shared/action_button.dart';
 import 'package:date_topics/shared/decoration.dart';
 import 'package:flutter/material.dart';
 
@@ -47,15 +48,9 @@ class ItemScreen extends StatelessWidget {
             )
           : null,
       floatingActionButton: topic.allowPlayer
-          ? FloatingActionButton(
-              backgroundColor: Colors.cyan[200],
-              elevation: 0,
-              focusElevation: 0,
-              hoverElevation: 0,
-              highlightElevation: 0,
-              foregroundColor: Colors.deepPurpleAccent,
+          ? ActionButton(
               onPressed: () => _showPlayerSetupPanel(topic),
-              child: const Icon(Icons.play_arrow),
+              icon: const Icon(Icons.play_arrow),
             )
           : null,
       floatingActionButtonLocation:

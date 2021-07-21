@@ -1,5 +1,6 @@
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/player/player.dart';
+import 'package:date_topics/shared/button.dart';
 import 'package:flutter/material.dart';
 
 class PlayerSetup extends StatefulWidget {
@@ -41,12 +42,8 @@ class _PlayerSetupState extends State<PlayerSetup> {
                 setState(() => _currentMembersNumber = val.round()),
           ),
           SizedBox(height: 10.0),
-          RaisedButton(
-            color: Colors.deepPurpleAccent,
-            child: Text(
-              'Запустить плеер',
-              style: TextStyle(color: Colors.white),
-            ),
+          Button(
+            text: "Запустить плеер",
             onPressed: () async {
               if (_formKey.currentState.validate()) {
                 Navigator.pop(context);
