@@ -1,5 +1,6 @@
 import 'package:date_topics/domain/domain.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 
 class ItemCard extends StatelessWidget {
   final Item item;
@@ -26,9 +27,15 @@ class ItemCard extends StatelessWidget {
                   style: TextStyle(color: Colors.grey[800]),
                 ),
               if (item.title != null) SizedBox(height: 6),
-              Text(
-                item.body,
-                style: TextStyle(fontSize: 18.0),
+              Html(
+                data: item.body,
+                style: {
+                  "body": Style(
+                    fontSize: FontSize(18),
+                    padding: EdgeInsets.all(0),
+                    margin: EdgeInsets.all(0),
+                  ),
+                },
               ),
             ],
           ),
