@@ -3,7 +3,9 @@ import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/item/widgets/item_card.dart';
 import 'package:date_topics/screens/player/widgets/member_caption.dart';
 import 'package:date_topics/shared/button.dart';
+import 'package:date_topics/shared/colors.dart';
 import 'package:date_topics/shared/decoration.dart';
+import 'package:date_topics/shared/elevation.dart';
 import 'package:flutter/material.dart';
 
 class PlayerScreen extends StatefulWidget {
@@ -68,7 +70,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
           backgroundColor: Colors.pink[300],
           title: Text("${widget.topic.title}"),
           centerTitle: true,
-          elevation: 0,
+          elevation: elevation,
           flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
         decoration: screenBackgroundDecoration,
@@ -83,7 +85,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                       "Вопрос ${_currentItemIdx + 1}/${widget.topic.itemsCount()}",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.blueGrey[800],
+                        color: darkGrey,
                       ),
                     ),
                     SizedBox(height: 35),

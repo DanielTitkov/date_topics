@@ -1,5 +1,6 @@
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/topic/topic.dart';
+import 'package:date_topics/shared/elevation.dart';
 import 'package:flutter/material.dart';
 
 class TopicGroupCard extends StatelessWidget {
@@ -12,7 +13,7 @@ class TopicGroupCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(bottom: 12),
       child: Card(
-        elevation: 0,
+        elevation: elevation,
         margin: EdgeInsets.fromLTRB(20, 6, 20, 0),
         child: InkWell(
           onTap: () {

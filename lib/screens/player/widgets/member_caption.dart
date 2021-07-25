@@ -1,4 +1,5 @@
 import 'package:date_topics/domain/domain.dart';
+import 'package:date_topics/shared/colors.dart';
 import 'package:flutter/material.dart';
 
 class MemberCaption extends StatelessWidget {
@@ -16,7 +17,7 @@ class MemberCaption extends StatelessWidget {
         text: "Отвечает ",
         style: TextStyle(
           fontSize: 22,
-          color: Colors.blueGrey[800],
+          color: darkGrey,
           // fontWeight: FontWeight.bold,
         ),
         children: <TextSpan>[

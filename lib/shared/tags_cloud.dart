@@ -1,4 +1,6 @@
 import 'package:date_topics/data/tags.dart';
+import 'package:date_topics/shared/button.dart';
+import 'package:date_topics/shared/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:date_topics/domain/domain.dart';
 
@@ -45,20 +47,13 @@ class _TagsCloudState extends State<TagsCloud> {
                   _toggleTagActive(e);
                 },
                 label: Text(e.title),
-                backgroundColor:
-                    _tagIsActive(e) ? Colors.deepPurpleAccent : Colors.grey,
+                backgroundColor: _tagIsActive(e) ? accentColor : Colors.grey,
               );
             }).toList()),
-        FlatButton(
-          color: Colors.deepPurpleAccent,
+        Button(
+          text: "Подвердить",
           onPressed: () {},
-          child: Text(
-            "Подвердить",
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        )
+        ),
       ],
     );
   }

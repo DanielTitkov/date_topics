@@ -1,3 +1,4 @@
+import 'package:date_topics/shared/colors.dart';
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
@@ -9,7 +10,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      color: Colors.deepPurpleAccent,
+      color: accentColor,
       onPressed: onPressed,
       child: Text(
         text,

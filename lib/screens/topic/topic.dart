@@ -1,6 +1,7 @@
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/topic/widgets/topic_list.dart';
 import 'package:date_topics/shared/decoration.dart';
+import 'package:date_topics/shared/elevation.dart';
 import 'package:flutter/material.dart';
 
 class TopicScreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _TopicScreenState extends State<TopicScreen> {
           backgroundColor: Colors.pink[300],
           title: Text("${widget.topicGroup.title}"),
           centerTitle: true,
-          elevation: 0,
+          elevation: elevation,
           flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
         decoration: screenBackgroundDecoration,

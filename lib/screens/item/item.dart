@@ -3,6 +3,7 @@ import 'package:date_topics/screens/item/widgets/item_list.dart';
 import 'package:date_topics/screens/item/widgets/player_setup.dart';
 import 'package:date_topics/shared/action_button.dart';
 import 'package:date_topics/shared/decoration.dart';
+import 'package:date_topics/shared/elevation.dart';
 import 'package:flutter/material.dart';
 
 class ItemScreen extends StatelessWidget {
@@ -30,7 +31,7 @@ class ItemScreen extends StatelessWidget {
           backgroundColor: Colors.pink[300],
           title: Text("${topic.title}"),
           centerTitle: true,
-          elevation: 0,
+          elevation: elevation,
           flexibleSpace: Container(decoration: appBarDecoration)),
       body: Container(
         decoration: screenBackgroundDecoration,
@@ -40,7 +41,7 @@ class ItemScreen extends StatelessWidget {
           ? Container(
               decoration: appBarDecoration,
               child: BottomAppBar(
-                elevation: 0,
+                elevation: elevation,
                 color: Colors.transparent,
                 shape: const CircularNotchedRectangle(),
                 child: Container(height: 50.0),

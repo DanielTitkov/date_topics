@@ -1,3 +1,5 @@
+import 'package:date_topics/shared/colors.dart';
+import 'package:date_topics/shared/elevation.dart';
 import 'package:flutter/material.dart';
 
 class ActionButton extends StatelessWidget {
@@ -10,11 +12,11 @@ class ActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       backgroundColor: Colors.cyan[200],
-      elevation: 0,
-      focusElevation: 0,
-      hoverElevation: 0,
-      highlightElevation: 0,
-      foregroundColor: Colors.deepPurpleAccent,
+      elevation: elevation,
+      focusElevation: elevation,
+      hoverElevation: elevation,
+      highlightElevation: elevation,
+      foregroundColor: accentColor,
       onPressed: onPressed,
       child: icon,
     );

@@ -1,6 +1,7 @@
 import 'package:date_topics/domain/domain.dart';
 import 'package:date_topics/screens/player/player.dart';
 import 'package:date_topics/shared/button.dart';
+import 'package:date_topics/shared/colors.dart';
 import 'package:flutter/material.dart';
 
 class PlayerSetup extends StatefulWidget {
@@ -32,8 +33,8 @@ class _PlayerSetupState extends State<PlayerSetup> {
           SizedBox(height: 10.0),
           Text("Количество участников $_currentMembersNumber"),
           Slider(
-            activeColor: Colors.deepPurpleAccent,
-            inactiveColor: Colors.deepPurple[200],
+            activeColor: accentColor,
+            inactiveColor: dimedAccentColor,
             min: membersNumber[0].toDouble(),
             max: membersNumber.last.toDouble(),
             divisions: membersNumber.length - 1,

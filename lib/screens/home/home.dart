@@ -5,7 +5,9 @@ import 'package:date_topics/screens/topic_group/topic_group.dart';
 import 'package:date_topics/screens/topic_group/widgets/topic_group_list.dart';
 import 'package:date_topics/services/topic.dart';
 import 'package:date_topics/shared/action_button.dart';
+import 'package:date_topics/shared/colors.dart';
 import 'package:date_topics/shared/decoration.dart';
+import 'package:date_topics/shared/elevation.dart';
 import 'package:date_topics/shared/tags_cloud.dart';
 import 'package:flutter/material.dart';
 
@@ -52,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.pink[300],
         centerTitle: true,
-        elevation: 0,
+        elevation: elevation,
         flexibleSpace: Container(decoration: appBarDecoration),
         actions: [
           TextButton.icon(
@@ -103,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       "Случайный вопрос",
                       style: TextStyle(
                         fontSize: 22,
-                        color: Colors.blueGrey[800],
+                        color: darkGrey,
                       ),
                     ),
                     SizedBox(height: 35),
@@ -113,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         "${topicGroups[topicGroupIdx].title}:\n ${topicGroups[topicGroupIdx].topics[topicIdx].title}",
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.blueGrey[600],
+                          color: darkGrey,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -139,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Container(
         decoration: appBarDecoration,
         child: BottomAppBar(
-          elevation: 0,
+          elevation: elevation,
           color: Colors.transparent,
           shape: const CircularNotchedRectangle(),
           child: Container(height: 50.0),
