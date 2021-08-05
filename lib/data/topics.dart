@@ -1,306 +1,385 @@
 import 'package:date_topics/domain/domain.dart';
 
 final List<TopicGroup> topicGroupsData = [
-  TopicGroup(
-    id: "aron1",
-    title: "Вопросы Арона",
-    description: "Вопросы чтобы лучше узнать друг друга",
-    topics: [
-      Topic(
-        id: "aron1_aron_classic",
-        title: "Классическая процедура Арона",
-        allowRandom: false,
-        allowPlayer: true,
-        description: "36 вопросов",
-        image: "icons8-bookmark-50.png",
-        items: [
-          Item(
-            id: "aron1_aron_classic_q1",
-            body:
-                "Если бы ты мог пригласить кого-нибудь на ужин (близкого человека, умершего родственника, знаменитость), кого бы ты выбрал?",
-            title: "Вопрос 1",
-          ),
-          Item(
-            id: "aron1_aron_classic_q2",
-            body: "Хотел бы ты быть знаменитым? В чем?",
-            title: "Вопрос 2",
-          ),
-          Item(
-            id: "aron1_aron_classic_q3",
-            body:
-                "Прежде чем сделать звонок, ты репетируешь свою реплику? Почему?",
-            title: "Вопрос 3",
-          ),
-          Item(
-            id: "aron1_aron_classic_q4",
-            body: "Каким был бы для тебя «идеальный день»?",
-            title: "Вопрос 4",
-          ),
-          Item(
-            id: "aron1_aron_classic_q5",
-            body:
-                "Когда ты в последний раз пел в одиночестве? А для кого-нибудь другого?",
-            title: "Вопрос 5",
-          ),
-          Item(
-            id: "aron1_aron_classic_q6",
-            body:
-                "Если бы ты могли прожить до 90 лет и в последние 60 лет сохранить либо разум, либо тело 30-летнего, что бы ты выбрал?",
-            title: "Вопрос 6",
-          ),
-          Item(
-            id: "aron1_aron_classic_q7",
-            body: "У тебя есть тайное предчувствие того, как ты умрешь?",
-            title: "Вопрос 7",
-          ),
-          Item(
-            id: "aron1_aron_classic_q8",
-            body:
-                "Назови три черты, которые, по-твоему, есть и у тебя, и у твоего партнера.",
-            title: "Вопрос 8",
-          ),
-          Item(
-            id: "aron1_aron_classic_q9",
-            body: "За что ты испытываешь наибольшую благодарность?",
-            title: "Вопрос 9",
-          ),
-          Item(
-            id: "aron1_aron_classic_q10",
-            body:
-                "Если бы ты мог, что бы ты изменил в том, как тебя воспитывали?",
-            title: "Вопрос 10",
-          ),
-          Item(
-            id: "aron1_aron_classic_q11",
-            body:
-                "За 4 минуты расскажи партнеру историю твоей жизни настолько подробно, насколько это возможно.",
-            title: "Вопрос 11",
-          ),
-          Item(
-            id: "aron1_aron_classic_q12",
-            body:
-                "Если бы ты мог проснуться завтра, обладая каким-то умением или способностью, что бы это было?",
-            title: "Вопрос 12",
-          ),
-          Item(
-            id: "aron1_aron_classic_q13",
-            body:
-                "Если бы магический кристалл мог открыть тебе правду, о чем бы ты хотел узнать?",
-            title: "Вопрос 13",
-          ),
-          Item(
-            id: "aron1_aron_classic_q14",
-            body:
-                "Есть ли что-то, что ты уже давно мечтаешь сделать? Почему ты еще не сделал этого?",
-            title: "Вопрос 14",
-          ),
-          Item(
-            id: "aron1_aron_classic_q15",
-            body: "Самое большое достижение в твоей жизни?",
-            title: "Вопрос 15",
-          ),
-          Item(
-            id: "aron1_aron_classic_q16",
-            body: "Что в дружбе для тебя наиболее ценно?",
-            title: "Вопрос 16",
-          ),
-          Item(
-            id: "aron1_aron_classic_q17",
-            body: "Какое твое самое дорогое воспоминание?",
-            title: "Вопрос 17",
-          ),
-          Item(
-            id: "aron1_aron_classic_q18",
-            body: "А самое ужасное воспоминание?",
-            title: "Вопрос 18",
-          ),
-          Item(
-            id: "aron1_aron_classic_q19",
-            body:
-                "Если бы ты знал, что умрешь через год, что бы ты изменил в том, как ты живете? Почему?",
-            title: "Вопрос 19",
-          ),
-          Item(
-            id: "aron1_aron_classic_q20",
-            body: "Что для тебя значит дружба?",
-            title: "Вопрос 20",
-          ),
-          Item(
-            id: "aron1_aron_classic_q21",
-            body: "Какую роль любовь и нежность играют в твоей жизни?",
-            title: "Вопрос 21",
-          ),
-          Item(
-            id: "aron1_aron_classic_q22",
-            body:
-                "По очереди называй партнеру его положительные черты (обменяйтесь пятью характеристиками).",
-            title: "Вопрос 22",
-          ),
-          Item(
-            id: "aron1_aron_classic_q23",
-            body: "В твоей семье отношения теплые и близкие?",
-            title: "Вопрос 23",
-          ),
-          Item(
-            id: "aron1_aron_classic_q24",
-            body: "Что ты чувствуешь в связи с твоими отношениями с матерью?",
-            title: "Вопрос 24",
-          ),
-          Item(
-            id: "aron1_aron_classic_q25",
-            body:
-                "Составьте каждый по три утверждения, верных для вас обоих. Например, «Мы оба сейчас чувствуем…»",
-            title: "Вопрос 25",
-          ),
-          Item(
-            id: "aron1_aron_classic_q26",
-            body:
-                "Продолжите фразу: «Я бы хотел, чтобы был кто-то, с кем можно разделить…»",
-            title: "Вопрос 26",
-          ),
-          Item(
-            id: "aron1_aron_classic_q27",
-            body:
-                "Если ты собирался стать близким другом для твоего партнера, что бы ты ему рассказал прямо сейчас?",
-            title: "Вопрос 27",
-          ),
-          Item(
-            id: "aron1_aron_classic_q28",
-            body:
-                "Расскажи партнеру, что тебе нравится в нем; говори прямо, произноси вещи, которые ты не мог бы сказать случайному знакомому.",
-            title: "Вопрос 28",
-          ),
-          Item(
-            id: "aron1_aron_classic_q29",
-            body:
-                "Поделись с парт­нером неприятной ситуацией или смущающим моментом из твоей жизни.",
-            title: "Вопрос 29",
-          ),
-          Item(
-            id: "aron1_aron_classic_q30",
-            body:
-                "Когда ты в последний раз плакал при ком-нибудь? А в одиночестве?",
-            title: "Вопрос 30",
-          ),
-          Item(
-            id: "aron1_aron_classic_q31",
-            body:
-                "Расскажи своему партнеру, что ты уже сейчас ценишь в нем (в ней).",
-            title: "Вопрос 31",
-          ),
-          Item(
-            id: "aron1_aron_classic_q32",
-            body:
-                "По-твоему, какая тема слишком серьезна, чтобы шутить об этом?",
-            title: "Вопрос 32",
-          ),
-          Item(
-            id: "aron1_aron_classic_q33",
-            body:
-                "Если бы ты должен был умереть сегодня до конца дня, ни с кем не поговорив, о чем несказанном ты бы больше всего жалел? Почему ты еще не сказал этого?",
-            title: "Вопрос 33",
-          ),
-          Item(
-            id: "aron1_aron_classic_q34",
-            body:
-                "Твой дом со всем имуществом загорелся. После спасения близких и домашних животных у тебя есть время, чтобы забежать в дом и спасти еще что-то. Что бы ты взял? Почему?",
-            title: "Вопрос 34",
-          ),
-          Item(
-            id: "aron1_aron_classic_q35",
-            body:
-                "Смерть кого из членов твоей семьи расстроила бы тебя больше всего? Почему?",
-            title: "Вопрос 35",
-          ),
-          Item(
-            id: "aron1_aron_classic_q36",
-            body:
-                "Поделись личной проблемой и спроси партнера, как он бы справился с ней. Затем спроси, что он думает о твоих чувствах по поводу этой проблемы.",
-            title: "Вопрос 36",
-          ),
-        ],
-        tags: [
-          Tag(
-            id: "personal",
-            title: "Личное",
-            description: "Вопросы о личном",
-          ),
-          Tag(
-            id: "psychology",
-            title: "Психология",
-            description: "То что касается нашей психики",
-          ),
-        ],
-      ),
-    ],
-  ),
-  TopicGroup(
-    id: "mundane",
-    title: "Профанное",
-    description: "Вопросы на бытовые темы",
-    topics: [
-      Topic(
-        id: "mundane_m1",
-        title: "Вопросы о быте",
-        allowRandom: true,
-        allowPlayer: true,
-        description:
-            "Ну что-то такое. Потом нормально сделаю. Сейчас надо логику настроить. ",
-        items: [
-          Item(
-            id: "mundane_m1_q1",
-            body: "Что ты планируешь делать на следующей неделе?",
-          ),
-          Item(
-            id: "mundane_m1_q2",
-            body: "Что тебе нравится и не нравится в свиданиях?",
-          ),
-          Item(
-            id: "mundane_m1_q3",
-            body: "Чем ты славишься среди своих друзей?",
-          ),
-          Item(
-            id: "mundane_m1_q4",
-            body:
-                "Какой стереотип о мужчинах / женщинах ты ненавидишь больше всего?",
-          ),
-          Item(
-            id: "mundane_m1_q5",
-            body: "Что заставляет тебя нервничать?",
-          ),
-          Item(
-            id: "mundane_m1_q6",
-            body: "Что может мгновенно вызвать в тебе отторжение к человеку?",
-          ),
-          Item(
-            id: "mundane_m1_q7",
-            body: "С каким заблуждением о себе ты сталкиваешься чаще всего?",
-          ),
-          Item(
-            id: "mundane_m1_q8",
-            body: "Какое у тебя самое яркое воспоминание из детства?",
-          ),
-          Item(
-            id: "mundane_m1_q9",
-            body: "Ты жаворонок или сова?",
-          ),
-          Item(
-            id: "mundane_m1_q10",
-            body: "Что ты любишь на ужин/завтрак?",
-          ),
-          Item(
-            id: "mundane_m1_q11",
-            body: "Ты любишь больше кошек или собак?",
-          ),
-        ],
-        tags: [
-          Tag(
-            id: "personal",
-            title: "Личное",
-            description: "Вопросы о личном",
-          ),
-        ],
-      ),
-    ],
-  ),
+  TopicGroup(id: "aron1", title: "Вопросы Арона", description: "Вопросы чтобы лучше узнать друг друга", topics: [
+    Topic(id: "aron1_aron_classic", title: "Классическая процедура Арона", allowRandom: false, allowPlayer: true, description: "36 вопросов", image: "icons8-bookmark-50.png", items: [
+      Item(id: "aron1_aron_classic_q1", body: "Если бы ты мог пригласить кого-нибудь на ужин (близкого человека, умершего родственника, знаменитость), кого бы ты выбрал?", title: "Вопрос 1",),
+      Item(id: "aron1_aron_classic_q2", body: "Хотел бы ты быть знаменитым? В чем?", title: "Вопрос 2",),
+      Item(id: "aron1_aron_classic_q3", body: "Прежде чем сделать звонок, ты репетируешь свою реплику? Почему?", title: "Вопрос 3",),
+      Item(id: "aron1_aron_classic_q4", body: "Каким был бы для тебя «идеальный день»?", title: "Вопрос 4",),
+      Item(id: "aron1_aron_classic_q5", body: "Когда ты в последний раз пел в одиночестве? А для кого-нибудь другого?", title: "Вопрос 5",),
+      Item(id: "aron1_aron_classic_q6", body: "Если бы ты могли прожить до 90 лет и в последние 60 лет сохранить либо разум, либо тело 30-летнего, что бы ты выбрал?", title: "Вопрос 6",),
+      Item(id: "aron1_aron_classic_q7", body: "У тебя есть тайное предчувствие того, как ты умрешь?", title: "Вопрос 7",),
+      Item(id: "aron1_aron_classic_q8", body: "Назови три черты, которые, по-твоему, есть и у тебя, и у твоего партнера.", title: "Вопрос 8",),
+      Item(id: "aron1_aron_classic_q9", body: "За что ты испытываешь наибольшую благодарность?", title: "Вопрос 9",),
+      Item(id: "aron1_aron_classic_q10", body: "Если бы ты мог, что бы ты изменил в том, как тебя воспитывали?", title: "Вопрос 10",),
+      Item(id: "aron1_aron_classic_q11", body: "За 4 минуты расскажи партнеру историю твоей жизни настолько подробно, насколько это возможно.", title: "Вопрос 11",),
+      Item(id: "aron1_aron_classic_q12", body: "Если бы ты мог проснуться завтра, обладая каким-то умением или способностью, что бы это было?", title: "Вопрос 12",),
+      Item(id: "aron1_aron_classic_q13", body: "Если бы магический кристалл мог открыть тебе правду, о чем бы ты хотел узнать?", title: "Вопрос 13",),
+      Item(id: "aron1_aron_classic_q14", body: "Есть ли что-то, что ты уже давно мечтаешь сделать? Почему ты еще не сделал этого?", title: "Вопрос 14",),
+      Item(id: "aron1_aron_classic_q15", body: "Самое большое достижение в твоей жизни?", title: "Вопрос 15",),
+      Item(id: "aron1_aron_classic_q16", body: "Что в дружбе для тебя наиболее ценно?", title: "Вопрос 16",),
+      Item(id: "aron1_aron_classic_q17", body: "Какое твое самое дорогое воспоминание?", title: "Вопрос 17",),
+      Item(id: "aron1_aron_classic_q18", body: "А самое ужасное воспоминание?", title: "Вопрос 18",),
+      Item(id: "aron1_aron_classic_q19", body: "Если бы ты знал, что умрешь через год, что бы ты изменил в том, как ты живете? Почему?", title: "Вопрос 19",),
+      Item(id: "aron1_aron_classic_q20", body: "Что для тебя значит дружба?", title: "Вопрос 20",),
+      Item(id: "aron1_aron_classic_q21", body: "Какую роль любовь и нежность играют в твоей жизни?", title: "Вопрос 21",),
+      Item(id: "aron1_aron_classic_q22", body: "По очереди называй партнеру его положительные черты (обменяйтесь пятью характеристиками).", title: "Вопрос 22",),
+      Item(id: "aron1_aron_classic_q23", body: "В твоей семье отношения теплые и близкие?", title: "Вопрос 23",),
+      Item(id: "aron1_aron_classic_q24", body: "Что ты чувствуешь в связи с твоими отношениями с матерью?", title: "Вопрос 24",),
+      Item(id: "aron1_aron_classic_q25", body: "Составьте каждый по три утверждения, верных для вас обоих. Например, «Мы оба сейчас чувствуем…»", title: "Вопрос 25",),
+      Item(id: "aron1_aron_classic_q26", body: "Продолжите фразу: «Я бы хотел, чтобы был кто-то, с кем можно разделить…»", title: "Вопрос 26",),
+      Item(id: "aron1_aron_classic_q27", body: "Если ты собирался стать близким другом для твоего партнера, что бы ты ему рассказал прямо сейчас?", title: "Вопрос 27",),
+      Item(id: "aron1_aron_classic_q28", body: "Расскажи партнеру, что тебе нравится в нем; говори прямо, произноси вещи, которые ты не мог бы сказать случайному знакомому.", title: "Вопрос 28",),
+      Item(id: "aron1_aron_classic_q29", body: "Поделись с парт­нером неприятной ситуацией или смущающим моментом из твоей жизни.", title: "Вопрос 29",),
+      Item(id: "aron1_aron_classic_q30", body: "Когда ты в последний раз плакал при ком-нибудь? А в одиночестве?", title: "Вопрос 30",),
+      Item(id: "aron1_aron_classic_q31", body: "Расскажи своему партнеру, что ты уже сейчас ценишь в нем (в ней).", title: "Вопрос 31",),
+      Item(id: "aron1_aron_classic_q32", body: "По-твоему, какая тема слишком серьезна, чтобы шутить об этом?", title: "Вопрос 32",),
+      Item(id: "aron1_aron_classic_q33", body: "Если бы ты должен был умереть сегодня до конца дня, ни с кем не поговорив, о чем несказанном ты бы больше всего жалел? Почему ты еще не сказал этого?", title: "Вопрос 33",),
+      Item(id: "aron1_aron_classic_q34", body: "Твой дом со всем имуществом загорелся. После спасения близких и домашних животных у тебя есть время, чтобы забежать в дом и спасти еще что-то. Что бы ты взял? Почему?", title: "Вопрос 34",),
+      Item(id: "aron1_aron_classic_q35", body: "Смерть кого из членов твоей семьи расстроила бы тебя больше всего? Почему?", title: "Вопрос 35",),
+      Item(id: "aron1_aron_classic_q36", body: "Поделись личной проблемой и спроси партнера, как он бы справился с ней. Затем спроси, что он думает о твоих чувствах по поводу этой проблемы.", title: "Вопрос 36",),
+    ], tags: [
+      Tag(id: "personal", title: "Личное", description: "Вопросы о личном",),
+      Tag(id: "psychology", title: "Психология", description: "То что касается нашей психики",),
+    ],),
+  ],),
+  TopicGroup(id: "personal", title: "Личное", description: "Вопросы о том, что непосредственно касается собеседника", topics: [
+    Topic(id: "personal_mundate", title: "Быт", allowRandom: true, allowPlayer: true, description: "О том, что собеседник делает", image: "icons8-home-50.png", items: [
+      Item(id: "personal_mundate_q1", body: "Что ты планируешь делать на следующей неделе?",),
+      Item(id: "personal_mundate_q2", body: "Какое приложение в твоем телефоне ты бы хотела использовать чаще?",),
+      Item(id: "personal_mundate_q3", body: "О чем ты думаешь в душе?",),
+      Item(id: "personal_mundate_q4", body: "Что самое милое, что вы можете себе представить? Что-то такое милое, это почти больно.",),
+      Item(id: "personal_mundate_q5", body: "За что ты действительно возмущаешься, платя?",),
+      Item(id: "personal_mundate_q6", body: "Где вы берете свои новости?",),
+      Item(id: "personal_mundate_q7", body: "Какая самая старая вещь у вас есть?",),
+      Item(id: "personal_mundate_q8", body: "Расскажи что-нибудь, чего я точно не знаю.",),
+      Item(id: "personal_mundate_q9", body: "Какой у тебя любимый ресторан, бар или кафе?",),
+      Item(id: "personal_mundate_q10", body: "Какой устаревший сленг вы используете регулярно?",),
+      Item(id: "personal_mundate_q11", body: "Как ты засыпаешь, когда не можешь заснуть?",),
+    ], tags: [
+      Tag(id: "personal", title: "Личное", description: "Вопросы о личном",),
+    ],),
+    Topic(id: "personal_preference", title: "Вкусы и предпочтения", allowRandom: true, allowPlayer: true, description: "О том, что собеседник любит и ценит", image: "icons8-heart-puzzle-50.png", items: [
+      Item(id: "personal_preference_q1", body: "Что тебе нравится и не нравится в свиданиях?",),
+      Item(id: "personal_preference_q2", body: "Какой стереотип о мужчинах / женщинах ты ненавидишь больше всего?",),
+      Item(id: "personal_preference_q3", body: "Что может мгновенно вызвать в тебе отторжение к человеку?",),
+      Item(id: "personal_preference_q4", body: "Что ты любишь на ужин/завтрак?",),
+      Item(id: "personal_preference_q5", body: "Куда бы ты поехала в самую последнюю очередь?",),
+      Item(id: "personal_preference_q6", body: "О чем бы ты хотела, чтобы люди перестали тебя спрашивать?",),
+      Item(id: "personal_preference_q7", body: "Какой частью своей культуры ты гордишься больше всего и меньше всего?",),
+      Item(id: "personal_preference_q8", body: "Какой странный аромат картофельных чипсов, который не существует, вы бы хотели попробовать?",),
+      Item(id: "personal_preference_q9", body: "Твоё самое большое увлечение, и чем бы ты хотела быть более увлечена?",),
+      Item(id: "personal_preference_q10", body: "Самая раздражающая вещь по твоему мнению?",),
+      Item(id: "personal_preference_q11", body: "Какой странный запах тебе действительно нравится?",),
+      Item(id: "personal_preference_q12", body: "На что бы ты хотела, чтобы у тебя было больше времени?",),
+      Item(id: "personal_preference_q13", body: "Какое слово больше всего режет слух?",),
+      Item(id: "personal_preference_q14", body: "Если бы ты могла посвятить свою жизнь решению одной проблемы, какую проблему ты бы выбрала?",),
+      Item(id: "personal_preference_q15", body: "Какой твой любимый способ знакомиться с новыми людьми?",),
+      Item(id: "personal_preference_q16", body: "Что ты действительно хочешь знать?",),
+      Item(id: "personal_preference_q17", body: "Какую милашечную песню ты любишь?",),
+      Item(id: "personal_preference_q18", body: "Чем ты стала недавно одержима?",),
+      Item(id: "personal_preference_q19", body: "Какой вымышленный персонаж действительно интригует тебя?",),
+      Item(id: "personal_preference_q20", body: "Какой стиль дизайна тебе нравится больше всего? Дизайн или стиль в архитектуре, интерьере, искусстве, автомобилях, телефонах или где-нибудь ещё.",),
+      Item(id: "personal_preference_q21", body: "Если бы ты могла просматривать электронную почту какого-то человека без их осведомлённости, за кем бы ты шпионила?",),
+      Item(id: "personal_preference_q22", body: "О чем можно говорить весь день?",),
+      Item(id: "personal_preference_q23", body: "О чем ты часто и увлечением рассказываешь?",),
+      Item(id: "personal_preference_q24", body: "Какое мороженое самое классное?",),
+      Item(id: "personal_preference_q25", body: "Каковы ваши самые важные правила при посещении свидания?",),
+      Item(id: "personal_preference_q26", body: "Какой ужасный фильм ты любишь?",),
+      Item(id: "personal_preference_q27", body: "Какую текущую тенденцию вы надеетесь сохранить в течение длительного времени?",),
+      Item(id: "personal_preference_q28", body: "Как вы судите человека?",),
+      Item(id: "personal_preference_q29", body: "Как бы выглядел ваш идеальный бар?",),
+      Item(id: "personal_preference_q30", body: "де лучшее место для прогулок?",),
+      Item(id: "personal_preference_q31", body: "Вам нравится, когда вещи тщательно планируются, или вы предпочитаете просто плыть по течению?",),
+      Item(id: "personal_preference_q32", body: "Какие мелочи вы знаете, что это очень интересно, но и очень бесполезно?",),
+      Item(id: "personal_preference_q33", body: "Какое животное самое величественное?",),
+      Item(id: "personal_preference_q34", body: "Какое животное самое красивое?",),
+      Item(id: "personal_preference_q35", body: "Какую пищу вы предпочитаете чаще всего?",),
+      Item(id: "personal_preference_q36", body: "Какие небольшие изменения значительно улучшают внешность человека?",),
+      Item(id: "personal_preference_q37", body: "Какие небольшие изменения сильно портят внешность человека?",),
+      Item(id: "personal_preference_q38", body: "Какие сны приятнее всего?",),
+      Item(id: "personal_preference_q39", body: "Какой самый раздражающий шум?",),
+      Item(id: "personal_preference_q40", body: "Какой самый худший комплимент можно сделать кому-нибудь?",),
+      Item(id: "personal_preference_q41", body: "Что-то, что люди думают, заставляет их выглядеть круто, но на самом деле имеет противоположный эффект?",),
+      Item(id: "personal_preference_q42", body: "Какого исполнителя или группу вы всегда рекомендуете, когда кто-то просит музыкальную рекомендацию?",),
+      Item(id: "personal_preference_q43", body: "Какое самое отвратительное звучащее слово в языке?",),
+      Item(id: "personal_preference_q44", body: "Какие вымышеленные персонажи восхищают тебя больше всего?",),
+      Item(id: "personal_preference_q45", body: "Какие цитаты из фильмов вы используете регулярно?",),
+      Item(id: "personal_preference_q46", body: "Из какого фильма или книги вы знаете больше всего цитат?",),
+      Item(id: "personal_preference_q47", body: "Какие вещи вы любите готовить или умеете готовить?",),
+      Item(id: "personal_preference_q48", body: "Какое самое смешное животное на планете?",),
+      Item(id: "personal_preference_q49", body: "Что невероятно дешево, и вы бы заплатили гораздо больше?",),
+      Item(id: "personal_preference_q50", body: "Какие странные пищевые комбинации вам действительно нравятся?",),
+      Item(id: "personal_preference_q51", body: "Какую компанию вы презираете?",),
+      Item(id: "personal_preference_q52", body: "Какую пищу можно разжижать и пить через соломинку?",),
+      Item(id: "personal_preference_q53", body: "Что всегда поднимает тебе настроение, когда ты думаешь об этом?",),
+      Item(id: "personal_preference_q54", body: "Какой марке вы больше всего лояльны?",),
+      Item(id: "personal_preference_q55", body: "Что вас интересует, что большинство людей не интересует?",),
+    ], tags: [
+
+    ],),
+    Topic(id: "personal_experience", title: "Личный опыт", allowRandom: true, allowPlayer: true, description: "О том, что происходило или происходит с собеседником", image: "icons8-reminder-50.png", items: [
+      Item(id: "personal_experience_q1", body: "С каким заблуждением о себе ты сталкиваешься чаще всего?",),
+      Item(id: "personal_experience_q2", body: "Какое у тебя самое яркое воспоминание из детства?",),
+      Item(id: "personal_experience_q3", body: "Ты любишь больше кошек или собак?",),
+      Item(id: "personal_experience_q4", body: "С чем ты полностью покончила?",),
+      Item(id: "personal_experience_q5", body: "К какому воспоминанию ты просто возвращаешься?",),
+      Item(id: "personal_experience_q6", body: "Какая самая нелепая стычка у тебя была в жизни?",),
+      Item(id: "personal_experience_q7", body: "Какой самый большой урок тебе преподала жизнь?",),
+      Item(id: "personal_experience_q8", body: "Какой случайный прохожий оказал наибольшее влияние на твою жизнь?",),
+      Item(id: "personal_experience_q9", body: "Каким достижением ты гордишься, но большинство людей посчитало бы это глупым или странным?",),
+      Item(id: "personal_experience_q10", body: "Что ты давно хочешь начать, но всё никак не получается?",),
+      Item(id: "personal_experience_q11", body: "Кто был самым плохим гостем в твоем доме, и что они сделали?",),
+      Item(id: "personal_experience_q12", body: "Когда время пролетает быстрее всего, а когда тянется очень медленно?",),
+      Item(id: "personal_experience_q13", body: "Какой лучший язвительный ответ ты когда-либо слышала?",),
+      Item(id: "personal_experience_q14", body: "Какая самая странная традиция в твоей семье?",),
+      Item(id: "personal_experience_q15", body: "Кто был самым помешанным на власти человеком, которого ты встречала?",),
+      Item(id: "personal_experience_q16", body: "Признаков того, что парень стрёмный, жуткий и пугающий?",),
+      Item(id: "personal_experience_q17", body: "Какое у тебя самое первое воспоминание?",),
+      Item(id: "personal_experience_q18", body: "Какой лучший прикольный подарок ты когда-либо видела или получала?",),
+      Item(id: "personal_experience_q19", body: "Какой лучший совет ты когда-либо получала?",),
+      Item(id: "personal_experience_q20", body: "Какая самая лучшая шутка из тех, которую ты сказала или слышала?",),
+      Item(id: "personal_experience_q21", body: "Что-то странное, что ты рекомендуешь всем попробовать хотя бы один раз?",),
+      Item(id: "personal_experience_q22", body: "Оглядываясь назад на свою жизнь, что ты сделала, что принесло тебе наибольшее удовлетворение?",),
+      Item(id: "personal_experience_q23", body: "Последний раз, когда твоя интуиция тебя не подвела? Как насчет того времени, когда интуиция оказалась не права?",),
+      Item(id: "personal_experience_q24", body: "Какая самая большая ложь, которую кто-то тебе сказал?",),
+      Item(id: "personal_experience_q25", body: "Что самое худшее, что ты слышала, когда один человек говорил другому?",),
+      Item(id: "personal_experience_q26", body: "Каким был твой самый запоминающийся сон или кошмар?",),
+      Item(id: "personal_experience_q27", body: "Назови нелепость, в которой ты кого-то убедила в том, что это правда?",),
+      Item(id: "personal_experience_q28", body: "Самый большой выброс денег, который ты видела?",),
+      Item(id: "personal_experience_q29", body: "Какую последнюю катастрофу ты предотвратила?",),
+      Item(id: "personal_experience_q30", body: "Когда ты была ребенком, какой глупости ты смертельно боялась?",),
+      Item(id: "personal_experience_q31", body: "Самая бесящая вещь, которую ты делала или должна была перетерпеть?",),
+      Item(id: "personal_experience_q32", body: "Какую худшую книгу ты была вынуждена прочитать в школе?",),
+      Item(id: "personal_experience_q33", body: "Что всегда подводит тебя, и что тебя никогда не подводит?",),
+      Item(id: "personal_experience_q34", body: "О чем ты полностью изменила свое мнение, перейдя от веры в одно к вере прямо противоположной этому?",),
+      Item(id: "personal_experience_q35", body: "Что было самым разочаровывающим концом крутой книги / фильма / игры?",),
+      Item(id: "personal_experience_q36", body: "Кто самый счастливый человек, которого ты знаешь?",),
+      Item(id: "personal_experience_q37", body: "Какой у тебя любимый сувенир?",),
+      Item(id: "personal_experience_q38", body: "Какой твой самый лучший лайфхак, который ставить этику под вопрос?",),
+      Item(id: "personal_experience_q39", body: "Какое лучшее решение, которое ты когда-либо принимала?",),
+      Item(id: "personal_experience_q40", body: "Какая ужасная история у тебя от работы?",),
+      Item(id: "personal_experience_q41", body: "Кто был вашим сумасшедшим / самым интересным учителем?",),
+      Item(id: "personal_experience_q42", body: "Какая самая грустная сцена в фильме или сериале?",),
+      Item(id: "personal_experience_q43", body: "Кто самый творческий человек, которого вы знаете?",),
+      Item(id: "personal_experience_q44", body: "Какая самая яркая игра, в которую вы играли?",),
+      Item(id: "personal_experience_q45", body: "Какие блестящие примеры неверного направления вы видели?",),
+      Item(id: "personal_experience_q46", body: "Каким самым эпичным образом вы видели, как кто-то ушел или был уволен?",),
+      Item(id: "personal_experience_q47", body: "Какой, казалось бы, невинный вопрос заставляет вас думать: «Это ловушка!»?",),
+      Item(id: "personal_experience_q48", body: "Какие знания инсайдера есть только у людей в вашей сфере деятельности?",),
+      Item(id: "personal_experience_q49", body: "Какая твоя лучшая история со свадьбы?",),
+      Item(id: "personal_experience_q50", body: "Где самое неудобное место, в котором вы когда-либо спали?",),
+      Item(id: "personal_experience_q51", body: "Когда что-то начиналось плохо для тебя, но в конце концов это было здорово?",),
+      Item(id: "personal_experience_q52", body: "Какой самый странный разговор ты подслушал?",),
+      Item(id: "personal_experience_q53", body: "Какой лучший урок вы выучили из художественного произведения?",),
+      Item(id: "personal_experience_q54", body: "Что было самым большим осознанием, которое вы имели о себе?",),
+      Item(id: "personal_experience_q55", body: "Какое творческое использование смайликов вы когда-либо видели?",),
+      Item(id: "personal_experience_q56", body: "Когда было самое неподходящее время, когда ты смеялся?",),
+      Item(id: "personal_experience_q57", body: "Когда в последний раз вы на кого-то кричали?",),
+      Item(id: "personal_experience_q58", body: "Какие у вас были лучшие каникулы?",),
+      Item(id: "personal_experience_q59", body: "Какая самая трудная работа у тебя была?",),
+      Item(id: "personal_experience_q60", body: "Из какого фильма или книги вы знаете больше всего цитат?",),
+      Item(id: "personal_experience_q61", body: "Когда в последний раз вы не спали всю ночь? ",),
+      Item(id: "personal_experience_q62", body: "О какой глупости кто-то спорит с тобой?",),
+      Item(id: "personal_experience_q63", body: "С чем вам чаще всего нужна помощь?",),
+      Item(id: "personal_experience_q64", body: "Какую самую подозрительную вещь ты видел, чтобы кто-то делал? ",),
+      Item(id: "personal_experience_q65", body: "Какие хитрости и советы у тебя есть с твоей работы?",),
+      Item(id: "personal_experience_q66", body: "Какая твоя самая нелепая покупка?",),
+      Item(id: "personal_experience_q67", body: "С чем согласны все твои друзья?",),
+      Item(id: "personal_experience_q68", body: "Каким лучшим образом вы или кто-то из ваших знакомых вылезли из билета / проблемы с законом?",),
+      Item(id: "personal_experience_q69", body: "Какая самая смешная комедия, которую ты видел?",),
+      Item(id: "personal_experience_q70", body: "Какую вещь, вызывающую беспокойство, вы делаете регулярно?",),
+      Item(id: "personal_experience_q71", body: "В какую игру вы потратили больше всего часов? ",),
+      Item(id: "personal_experience_q72", body: "Какую самую удручающую еду ты съел?",),
+      Item(id: "personal_experience_q73", body: "Какие вещи “старого человека” ты делаешь?",),
+      Item(id: "personal_experience_q74", body: "Что самое неловкое, что происходит с вами регулярно?",),
+      Item(id: "personal_experience_q75", body: "Что самое странное, что случилось с вами, когда вы работали на работе?",),
+      Item(id: "personal_experience_q76", body: "Где ты больше не приветствуешься?",),
+    ], tags: [
+
+    ],),
+    Topic(id: "personal_dreams", title: "Мечты и цели", allowRandom: true, allowPlayer: true, description: "О том, чего собеседник хочет достичь", image: "icons8-goal-50.png", items: [
+      Item(id: "personal_dreams_q1", body: "На каких языках вы хотели бы говорить?",),
+      Item(id: "personal_dreams_q2", body: "Что вы делаете, чтобы сделать мир лучше?",),
+      Item(id: "personal_dreams_q3", body: "Какую еду ты никогда не ел, но очень хотел бы попробовать?",),
+      Item(id: "personal_dreams_q4", body: "Большинство людей хотят быть богатыми по той или иной причине. Почему ты хочешь быть богатой? Что было бы самым большим преимуществом богатства?",),
+    ], tags: [
+
+    ],),
+    Topic(id: "personal_personality", title: "Личность", allowRandom: true, allowPlayer: true, description: "О личности собеседника, как они себя видят?", image: "icons8-contacts-50.png", items: [
+      Item(id: "personal_personality_q1", body: "Что заставляет тебя нервничать?",),
+      Item(id: "personal_personality_q2", body: "Ты жаворонок или сова?",),
+      Item(id: "personal_personality_q3", body: "Чем ты славишься среди своих друзей?",),
+      Item(id: "personal_personality_q4", body: "Какой твой самый необычный страх?",),
+      Item(id: "personal_personality_q5", body: "На какого персонажа фильма или книги ты больше всего похожа?",),
+      Item(id: "personal_personality_q6", body: "Насколько ты решительна или нерешительна?",),
+      Item(id: "personal_personality_q7", body: "Как ты думаешь, что люди автоматически думают о тебе, когда смотрят на тебя?",),
+      Item(id: "personal_personality_q8", body: "На какие области твоей жизни ты возлагаешь большие надежды, и что это за большие надежды?",),
+      Item(id: "personal_personality_q9", body: "Что ты любишь в себе?",),
+      Item(id: "personal_personality_q10", body: "Что тебя удивляет?",),
+      Item(id: "personal_personality_q11", body: "Что странного в тебе?",),
+      Item(id: "personal_personality_q12", body: "Какая твоя причина вставать с постели по утрам?",),
+      Item(id: "personal_personality_q13", body: "Какой вопрос ты всегда хотела задать, но боялась выглядеть глупо?",),
+      Item(id: "personal_personality_q14", body: "Каков твой секретный талант?",),
+      Item(id: "personal_personality_q15", body: "Какие ценности наиболее важны для тебя?",),
+      Item(id: "personal_personality_q16", body: "Насколько ты планируешь будущее?",),
+    ], tags: [
+
+    ],),
+  ],),
+  TopicGroup(id: "puzzle", title: "На подумать", description: "Задачки и загадки", topics: [
+    Topic(id: "puzzle_logical", title: "Логические", allowRandom: true, allowPlayer: true, description: "Логические задачки", image: "icons8-brain-50.png", items: [
+
+    ], tags: [
+
+    ],),
+  ],),
+  TopicGroup(id: "society", title: "Общество", description: "Вопросы на социальные и политические темы", topics: [
+    Topic(id: "society_actual", title: "Острые темы", allowRandom: true, allowPlayer: true, description: "Отношение к актуальным вопросам", image: "icons8-user-groups-50.png", items: [
+      Item(id: "society_actual_q1", body: "Что становится все более социально приемлемым?",),
+      Item(id: "society_actual_q2", body: "Плюсы и минусы быть женщиной?",),
+      Item(id: "society_actual_q3", body: "В каком веке была лучшая мода?",),
+      Item(id: "society_actual_q4", body: "Какое на твой взгляд важное изменение должно быть сделано в системе образования в твоей стране?",),
+      Item(id: "society_actual_q5", body: "Что всегда звучит, как хорошая идея, но редко оказывается такой?",),
+      Item(id: "society_actual_q6", body: "Люди принципиально отличаются от животных? Если так, что нас отличает?",),
+      Item(id: "society_actual_q7", body: "О чем люди часто притворяются, что им это нравится или вводят себя в заблуждение, что им это нравится?",),
+      Item(id: "society_actual_q8", body: "Животное, которое тебя удивляет, что оно еще не вымерло?",),
+      Item(id: "society_actual_q9", body: "Какая часть культуры или какой тренд исчезли, но ты бы хотела, чтобы они вернулись?",),
+      Item(id: "society_actual_q10", body: "Что-то ужасное, что мы, люди, приняли, просто потому что так обстоят дела, но на самом деле так не должно быть?",),
+      Item(id: "society_actual_q11", body: "Что становится страннее, чем больше ты думаешь об этом?",),
+      Item(id: "society_actual_q12", body: "О каком событии ты хотела бы знать всю правду?",),
+      Item(id: "society_actual_q13", body: "Какие устаревшие обычаи, которые больше не имеют смысла, но люди все еще следуют им просто по традиции?",),
+      Item(id: "society_actual_q14", body: "Помимо повышения или более продолжительного отпуска, какой лучший бонус компания может предложить сотрудникам?",),
+      Item(id: "society_actual_q15", body: "На какой навык ты бы хотела, чтобы больше людей нашли время для того, чтобы его приобрести или выучиться ему?",),
+      Item(id: "society_actual_q16", body: "Что на самом деле произошло, но кажется абсурдным и нереальным?",),
+      Item(id: "society_actual_q17", body: "Какими личностными качествами люди гордятся, но не должны?",),
+      Item(id: "society_actual_q18", body: "Что романтизировано в современной культуре, но не должно быть?",),
+      Item(id: "society_actual_q19", body: "Что лучше всего сказать кому-то, чтобы его подбодрить и воодушевить, когда он чувствует себя подавленным?",),
+      Item(id: "society_actual_q20", body: "Какая худшая черта может быть у человека?",),
+      Item(id: "society_actual_q21", body: "Что-то, что никто не хочет слышать, но каждый должен?",),
+      Item(id: "society_actual_q22", body: "Что делает кого-то «хорошим» человеком?",),
+      Item(id: "society_actual_q23", body: "Какое изобретение не получает много любви, но значительно улучшило мир?",),
+      Item(id: "society_actual_q24", body: "Что-то, о чем люди не волнуются, но действительно должны?",),
+      Item(id: "society_actual_q25", body: "Каковы некоторые из наиболее распространенных заблуждений?",),
+      Item(id: "society_actual_q26", body: "Как вы думаете, какое большое событие произойдет в ближайшее время, чего большинство людей не ожидают?",),
+      Item(id: "society_actual_q27", body: "Что самое странное в современной жизни, которую люди воспринимают как нормальную?",),
+      Item(id: "society_actual_q28", body: "Что скоро станет лучше?",),
+      Item(id: "society_actual_q29", body: "Какая текущая тенденция не имеет смысла для вас?",),
+      Item(id: "society_actual_q30", body: "Какой продукт или услуга дороже, чем нужно?",),
+      Item(id: "society_actual_q31", body: "Какая самая жуткая технология сейчас существует?",),
+      Item(id: "society_actual_q32", body: "Какие у вас прогнозы на ближайшее будущее?",),
+      Item(id: "society_actual_q33", body: "Какие две вещи ужасны, когда разделены, но велики, когда вы соединяете их вместе?",),
+      Item(id: "society_actual_q34", body: "Что действительно нужно модернизировать?",),
+      Item(id: "society_actual_q35", body: "Что насчет противоположного пола вас смущает больше всего?",),
+      Item(id: "society_actual_q36", body: "Какая профессия не получает достаточно кредитов или уважения?",),
+      Item(id: "society_actual_q37", body: "От какой тенденции вы устали?",),
+      Item(id: "society_actual_q38", body: "Что лучше сломано, чем целое?",),
+      Item(id: "society_actual_q39", body: " Какой самый переоцененный продукт на рынке?",),
+      Item(id: "society_actual_q40", body: "Когда цензура оправдана?",),
+    ], tags: [
+
+    ],),
+    Topic(id: "society_experiment", title: "Мысленные эксперименты", allowRandom: true, allowPlayer: true, description: "Что было бы, если…?", image: "icons8-girl-with-chemical-test-tube-50.png", items: [
+      Item(id: "society_experiment_q1", body: "Как бы изменился мир, если бы супер-герои и супер-злодеи реально существовали?",),
+      Item(id: "society_experiment_q2", body: "Твоя стратегия выживания после апокалиптической эпидемии?",),
+      Item(id: "society_experiment_q3", body: "Если бы ты могла поместить свой мозг в робота и жить бесконечно, ты бы сделала это?",),
+      Item(id: "society_experiment_q4", body: "Если бы ты могла заменить приветствие рукопожатием на что-то более интересное, что бы это было?",),
+      Item(id: "society_experiment_q5", body: "Если бы ты могла выбрать кого-нибудь, кто жив или мертв, то кого бы ты выбрала возглавить нашу страну?",),
+      Item(id: "society_experiment_q6", body: "Чего не существует, но ты отчаянно хочешь / нуждаешься в этом?",),
+      Item(id: "society_experiment_q7", body: "Придумай опции/варианты, если бы ты могла «щелкнуть правой кнопкой мыши» людей?",),
+      Item(id: "society_experiment_q8", body: "Если бы ты была игрушкой, с какими аксессуарами ты бы продавалась?",),
+      Item(id: "society_experiment_q9", body: "Если бы все было количественно определено, какую жизненную статистику ты бы хотела увидеть своими глазами?",),
+      Item(id: "society_experiment_q10", body: "Если бы тебе дали 100 000 долларов, но их можно было бы использовать только для улучшения твоего душа или ванны, какие улучшения ты бы сделала?",),
+      Item(id: "society_experiment_q11", body: "Если многие люди считают, что красный символизирует гнев / страсть, голубой - грусть, зеленый - зависть, то какие чувства будут воплощать фиолетовый, бирюзовый, серебряный и коричневый?",),
+      Item(id: "society_experiment_q12", body: "Если бы ты могла носить только один наряд всю оставшуюся жизнь, что бы это было?",),
+      Item(id: "society_experiment_q13", body: "Что бы ты сделала, если бы знала, что мировая война начнется через три месяца?",),
+      Item(id: "society_experiment_q14", body: "Если бы ты могла знать одну правду о себе, истории, мире или даже вселенной, какую истину ты бы хотела знать?",),
+      Item(id: "society_experiment_q15", body: "Что было бы написано на твоем ярлыке с предупреждением, если бы у каждого был ярлык?",),
+      Item(id: "society_experiment_q16", body: "Если бы ты могла самостоятельно разработать для себя орган, что бы он делал, и где бы он был?",),
+      Item(id: "society_experiment_q17", body: "Если бы тебе пришлось выбирать своего супруга, основываясь только на одном вопросе, какой вопрос ты бы задала?",),
+      Item(id: "society_experiment_q18", body: "Если бы деньги не были проблемой, в какой компании, по твоему мнению, было бы интересно работать?",),
+      Item(id: "society_experiment_q19", body: "О чем многие люди имеют очень сильные мнения, даже если они очень мало знают об этом?",),
+      Item(id: "society_experiment_q20", body: "Если бы вам дали тысячу акров земли, с которой вам не нужно было платить налоги, но вы не могли продать, что бы вы сделали с этим?",),
+      Item(id: "society_experiment_q21", body: "Каким был бы мир, населенный вашими клонами?",),
+      Item(id: "society_experiment_q22", body: "Если люди получат пурпурное сердце за храбрость, что будут представлять другие цветные сердца?",),
+      Item(id: "society_experiment_q23", body: "Если бы существовала книга заповедей для современного мира, какими были бы некоторые правила?",),
+      Item(id: "society_experiment_q24", body: "Если бы вы переезжали в другую страну, но могли упаковать только одну ручную сумку, что бы вы упаковали?",),
+      Item(id: "society_experiment_q25", body: "Какой будет точная метка для каждого месяца?",),
+      Item(id: "society_experiment_q26", body: "Какая вселенная кино была бы наихудшей для жизни?",),
+      Item(id: "society_experiment_q27", body: "Если вы хотите медленно сводить с ума соседа по комнате, используя только заметки, какие сообщения вы бы оставляли в доме?",),
+      Item(id: "society_experiment_q28", body: "Какое животное или растение, по вашему мнению, должно быть переименовано?",),
+      Item(id: "society_experiment_q29", body: "Какое приложение ты хочешь чтобы кто-нибудь сделал?",),
+      Item(id: "society_experiment_q30", body: "Какая апокалиптическая дистопия, по вашему мнению, наиболее вероятна?",),
+      Item(id: "society_experiment_q31", body: "Если бы вы построили тематический отель, какой была бы тема и как бы выглядели номера?",),
+      Item(id: "society_experiment_q32", body: "Если бы у вас был ресторан, какую еду он бы подал?",),
+      Item(id: "society_experiment_q33", body: "Какой самый скучный супергерой вы можете придумать?",),
+      Item(id: "society_experiment_q34", body: "Что законно сейчас, но, вероятно, не будет через 25 лет?",),
+      Item(id: "society_experiment_q35", body: "Какое научное открытие изменило бы курс человечества в одночасье, если бы оно было открыто?",),
+      Item(id: "society_experiment_q36", body: "Какое животное было бы самым симпатичным, если уменьшить его до размера кошки?",),
+      Item(id: "society_experiment_q37", body: "Если бы вы жили в мире виртуальной реальности своего собственного творения, как бы это выглядело?",),
+      Item(id: "society_experiment_q38", body: "Если бы магия была настоящей, какое заклинание ты бы попытался выучить первым?",),
+      Item(id: "society_experiment_q39", body: "Что противоположно коале?",),
+    ], tags: [
+
+    ],),
+    Topic(id: "society_topical", title: "На злобу дня", allowRandom: true, allowPlayer: true, description: "Об интересных событиях современности и недавнего прошлого", image: "icons8-today-50.png", items: [
+      Item(id: "society_topical_q1", body: "Курьёзный случай со свадьбой", title: "Геи в Берлине",),
+      Item(id: "society_topical_q2", body: "Противоречивая реклама", title: "Проблема Вкусвилла",),
+    ], tags: [
+
+    ],),
+  ],),
+  TopicGroup(id: "therapy", title: "Психотерапетические вопросы", description: "Вопросы, которые помогают как-то переосмыслить свой опыт и идентичность можно использовать для себя с помощью плеера)", topics: [
+    Topic(id: "therapy_deconst", title: "Деконструкция", allowRandom: false, allowPlayer: true, description: "Вопросы для анализа важных идей в вашей жизни", image: "icons8-puzzle-50.png", items: [
+      Item(id: "therapy_deconst_q1", body: "Как вы познакомились с этой идеей? От кого или откуда узнали о ней? Когда впервые об этом подумали?", title: "Вопрос 1",),
+      Item(id: "therapy_deconst_q2", body: "Как эта идея появилась исторически? Кто это придумал, начал говорить об этом? Когда? Почему? При каких условиях?", title: "Вопрос 2",),
+      Item(id: "therapy_deconst_q3", body: "Кто разделяет эту идею? Все ли понимают её одинаково?", title: "Вопрос 3",),
+      Item(id: "therapy_deconst_q4", body: "Как распространяется эта идея? Откуда люди узнают о ней? Как знакомятся с ней? Почему начинают её разделять?", title: "Вопрос 4",),
+      Item(id: "therapy_deconst_q5", body: "Кто и что способствует распространению этой идеи? Кто её поддерживает? Есть ли кто-то, кому она выгодна?", title: "Вопрос 5",),
+      Item(id: "therapy_deconst_q6", body: "Кто и что противостоит этой идее? Почему они противостоят? Какие средства используют?", title: "Вопрос 6",),
+      Item(id: "therapy_deconst_q7", body: "Какие есть альтернативные идеи? Знаете ли вы другие точки зрения на эту проблему? Если не знаете, можете ли придумать?", title: "Вопрос 7",),
+      Item(id: "therapy_deconst_q8", body: "Как эта идея влияет на вашу жизнь? Что из неё следует? Что заставляет делать? Что не дает? Что будет, если не подчиняться идее, действовать вопреки? В каких условиях работает эта идея? Есть ли исключения?", title: "Вопрос 8",),
+      Item(id: "therapy_deconst_q9", body: "Нравится ли вам влияние этой идеи на вашу жизнь? Почему вы оцениваете его именно так? Каким вашим ценностям, важным для вас вещам она мешает? Каким помогает?", title: "Вопрос 9",),
+      Item(id: "therapy_deconst_q10", body: "Что бы вы хотели сделать с этой идеей теперь? Отказаться от неё? Сохранить? Переформулировать? Кто или что может вам в этом помочь?", title: "Вопрос 10",),
+    ], tags: [
+
+    ],),
+  ],),
+  TopicGroup(id: "cognitive", title: "Когнитивные техники", description: "Техники, которые помогают найти решение какой-то проблемы (можно использовать для себя с помощью плеера)", topics: [
+    Topic(id: "cognitive_bisociation", title: "Бисоциации", allowRandom: false, allowPlayer: true, description: "Техника, предложенная Артуром Кеслером в книга Акт творчества. Основана на связывании разных контекстов, идей из областей, которые кажутся несвязанными. Стимулирует творческое мышление для нахождения неожиданных решений. В качестве дополнительной области на втором шаге лучше выбирать то, в чем хорошо разбираешься. ", image: "icons8-maracas-50.png", items: [
+      Item(id: "cognitive_bisociation_q1", body: "Как можно более точно и полно опишите проблему, дайте её краткое опредление.", title: "Определение проблемы",),
+      Item(id: "cognitive_bisociation_q2", body: "Что похоже на то, с чем вы столкнулись? Что похоже на желаемый результат? В какой области уже есть похожее решение? В какой области работает то, что не работает в вашей области? Если ничего не приходит в голову, можно выбрать любую область из знакомых вам.", title: "Вторая матрица мышления",),
+      Item(id: "cognitive_bisociation_q3", body: "Чем похожи решения в двух областях, чем они отличаются? Какие есть общие принципы и закономерности, которые можно перенести в вашу область? Что на первый взгляд ну никак нельзя перенести?", title: "Поиск аналогий",),
+      Item(id: "cognitive_bisociation_q4", body: "Какие удачные решения из второй области можно перенести на рассматриваемую проблему? Как это сделать? Что нужно, чтобы их адаптировать? Какие преимущества это даст, какие могут быть ограничения?", title: "Перенос решений",),
+    ], tags: [
+
+    ],),
+    Topic(id: "cognitive_pmi", title: "Плюс-Минус-Интересно", allowRandom: false, allowPlayer: true, description: "Техника базовой систематизации мышления, предложенная Эдвардом де Боно. Простая, но предоставляет какую-то структуру для рассмотрения проблемы. Не обязательно отвечать последовательно, можно возвращаться туда-обратно, дополнять. ", image: "icons8-plus-+-50.png", items: [
+      Item(id: "cognitive_pmi_q1", body: "Позитивные аспекты проблемы, потенциальные выгоды, результаты, успехи, положительные эмоции", title: "Плюс",),
+      Item(id: "cognitive_pmi_q2", body: "Негативные аспекты проблемы, настоящий или потенциальный ущерб, нежелательные результаты, отрицательные эмоции.", title: "Минус",),
+      Item(id: "cognitive_pmi_q3", body: "То, что нельзя отнести к предыдущим пунктам, интересные наблюдения, гипотезы, догадки, идеи.", title: "Интересно",),
+    ], tags: [
+
+    ],),
+    Topic(id: "cognitive_polya", title: "Вопросы Пойи", allowRandom: false, allowPlayer: true, description: "Серия вопросов для того чтобы организовано подойти к задаче с неизвестными решением. Эту технику придумал Дьёрдь Пойа, изначательно для решения математических задач. Тут она адаптирована для использования в контексте повседневности. ", image: "icons8-girl-and-math-equation-50.png", items: [
+      Item(id: "cognitive_polya_q1", body: "Что известно? Что неизвестно? Каковы условия решения задачи? Можно ли их выполнить?", title: "Шаг 1",),
+      Item(id: "cognitive_polya_q2", body: "Достаточны ли эти условия для решения? Есть ли среди них излишние? Есть ли противоречивые?", title: "Шаг 2",),
+      Item(id: "cognitive_polya_q3", body: "Встречалась ли эта задача раньше? Может быть, вы встречали её в какой-то другой форме?", title: "Шаг 3",),
+      Item(id: "cognitive_polya_q4", body: "Известна ли какая-то похожая задача? Может быть, вы знаете другую задачу, в которой были похожие условия?", title: "Шаг 4",),
+      Item(id: "cognitive_polya_q5", body: "Можно ли перенести какие-то элементы известной задачи? Как из нужно адаптировать, чтобы они подошли?", title: "Шаг 5",),
+      Item(id: "cognitive_polya_q6", body: "Можно ли переформулировать проблему? Выразить её по-другому?", title: "Шаг 6",),
+      Item(id: "cognitive_polya_q7", body: "Можно ли придумать какую-то более общую задачу? Или более специфическую? Можно ли решить эту новую задачу или её часть?", title: "Шаг 7",),
+      Item(id: "cognitive_polya_q8", body: "Станет ли легче решить задачу, если отбросить часть условий? Что изменилось?", title: "Шаг 8",),
+      Item(id: "cognitive_polya_q9", body: "Как нужно изменить начальные условия, чтобы стало понятно, как решить задачу?", title: "Шаг 9",),
+      Item(id: "cognitive_polya_q10", body: "Всё ли, что известно о задаче, вы использовали? Все ли существенные аспекты рассмотрены?", title: "Шаг 10",),
+      Item(id: "cognitive_polya_q11", body: "Учитывая все предыдущие рассуждения, попробуйте составить план решения.", title: "Шаг 11",),
+      Item(id: "cognitive_polya_q12", body: "Как контролировать этапы этого плана? Как для каждого шага понять, что он привел к нужным результатам?", title: "Шаг 12",),
+      Item(id: "cognitive_polya_q13", body: "Представьте, что задача решена. Как проверить результат? Как убедиться, что это именно то, что нужно?", title: "Шаг 13",),
+      Item(id: "cognitive_polya_q14", body: "Может быть, вам приходит в голову другой способ, которым можно решить эту задачу? Какое решение кажется самым простым и интуитивным?", title: "Шаг 14",),
+      Item(id: "cognitive_polya_q15", body: "Есть ли какие-то конкретные действия, которые вы хотите наметить по результатам этих рассуждений?", title: "Шаг 15",),
+    ], tags: [
+
+    ],),
+  ],),
 ];
