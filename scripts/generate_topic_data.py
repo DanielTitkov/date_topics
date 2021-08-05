@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 import pprint
 from typing import Union
@@ -70,7 +71,26 @@ def parse_data(source: str) -> Union[list, dict]:
 
     topic_groups = add_tags(topic_groups, tags)
 
+    if not is_consistent(topic_groups):
+        sys.exit("data is not consistent, aborting")
+
     return topic_groups, tags
+
+
+def is_consistent(data: list):
+    if len(data) == 0:
+        print("no data")
+        return False
+    for tg in data:
+        if len(tg.get("topics", [])) == 0:
+            print("topic group has no topics:", tg)
+            return False
+        for topic in tg["topics"]:
+            if len(topic.get("items", [])) == 0:
+                print("topic has no items", topic)
+                return False
+
+    return True
 
 
 def item_to_string(d: dict) -> str:

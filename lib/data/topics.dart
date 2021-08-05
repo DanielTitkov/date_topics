@@ -230,7 +230,7 @@ final List<TopicGroup> topicGroupsData = [
   ],),
   TopicGroup(id: "puzzle", title: "На подумать", description: "Задачки и загадки", topics: [
     Topic(id: "puzzle_logical", title: "Логические", allowRandom: true, allowPlayer: true, description: "Логические задачки", image: "icons8-brain-50.png", items: [
-
+      Item(id: "puzzle_logical_q1", body: "Что противоположно коале?",),
     ], tags: [
 
     ],),
