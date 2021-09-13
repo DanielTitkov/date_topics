@@ -231,6 +231,8 @@ final List<TopicGroup> topicGroupsData = [
   TopicGroup(id: "puzzle", title: "На подумать", description: "Задачки и загадки", topics: [
     Topic(id: "puzzle_logical", title: "Логические", allowRandom: true, allowPlayer: true, description: "Логические задачки", image: "icons8-brain-50.png", items: [
       Item(id: "puzzle_logical_q1", body: "Что противоположно коале?",),
+      Item(id: "puzzle_logical_q2", body: "Как нарисовать треугольник, чтобы всего его углы были прямыми?",),
+      Item(id: "puzzle_logical_q3", body: "Две девочки стоят на совершенно плоском полигоне. У каждой в руке мандарин. Они держат свои мандарины на одинаковой высоте. Одна кидает свой мандарин точно вперёд, другая просто отпускает и мандарин падает вниз. Какой из мандаринов раньше упадёт на поверхность полигона и почему?",),
     ], tags: [
 
     ],),
