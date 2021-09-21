@@ -19,6 +19,24 @@ class _TopicScreenState extends State<TopicScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.pink[100],
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.grey[200],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Icons by Icons8',
+                style: TextStyle(
+                  color: Colors.grey[500],
+                ),
+              ),
+            ],
+          ),
+        ),
+        elevation: 0,
+      ),
       appBar: AppBar(
           backgroundColor: Colors.pink[300],
           title: Text("${widget.topicGroup.title}"),
